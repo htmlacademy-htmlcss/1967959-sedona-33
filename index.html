@@ -7,31 +7,33 @@
   <body>
         <!--Хедер с главной навигацие по сайту-->
     <header class="page-header">
-      <img class="logo-header" src="#" alt="Логотип города в Аризоне Седона">
+      <img class="page-header-logo" src="#" alt="Логотип города в Аризоне Седона">
       <nav class="navigation">
         <ul class="navigetion-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigetion-list-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visual-hidden">Поиск</span>
-            </a>
+          <li class="navigation-user-item">
+            <button class="navigation-user-icon-button">
+              <span class="visually-hidden">Поиск</span>
+            </button>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visual-hidden">Избранное</span>
-            </a>
+          <li class="navigation-user-item">
+            <button class="navigation-user-icon-button">
+              <span class="visually-hidden">Избранное</span>
+            </button>
           </li>
-          <a class="button button-all" href="#">ХОЧУ СЮДА!</a>
+          <li class="navigation-user-item">
+            <button class="button-button-all" href="#">ХОЧУ СЮДА!</button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -99,45 +101,52 @@
             <p class="advantages-text-number-5">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
-        <!--Блок поиска гостиниц-->
       </section>
+        <!--Блок поиска гостиниц-->
       <section class="search">
         <h2>Заинтересовались?</h2>
         <p class="text-search">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button button-all" href="#">ПОИСК ГОСТИНИЦЫ В Cедоне</a>"
+        <button class="button button-all" href="#">ПОИСК ГОСТИНИЦЫ В CЕДОНЕ</button>
       </section>
-      <!--Блок подписки-->
+        <!--Блок подписки-->
       <section class="mailing-list">
         <h2>Подпишитесь на рассылку</h2>
         <p class="text-mailing-list">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="#" class="mailing-form">
-          <input type="text" name="mailing-form-user" value="Ваш e-mail">
+        <form action="https://echo.htmlacademy.ru/" class="mailing-form">
+          <label>
+            Ваш e-mail
+            <br>
+            <input type="text" name="mailing-form-user" required>
+          </label>
         </form>
-        <button class="mailing-form-button" type="submit">ПОДПИСАТЬСЯ</button>
+        <br>
+        <input type="submit" value="ПОДПИСАТЬСЯ">
       </section>
     </main>
         <!--Футер-->
     <footer>
-      <ul class="footer">
-        <li class="footer-item">
-          <a class="footer-item-img-logo-facebook-link" href="https://www.facebook.com/htmlacademy">
-            <img class="footer-item-img-logo-facebook" src="#" alt="логотип ссылка facebook">
-          </a>
+      <ul class="button-icon-list" style="list-style: none;">
+        <li class="button-icon-item">
+          <button class="button-icon-facebook">
+            <span class="visually-hidden">Перейти в Facebook.</span>
+          </button>
         </li>
-        <li class="footer-item">
-          <a class="footer-item-img-logo-twitter-link" href="https://twitter.com/htmlacademy_ru">
-            <img class="footer-item-img-logo-twitter" src="#" alt="логотип ссылка twitter"></a>
+        <li class="button-icon-item">
+          <button class="button-icon-twitter">
+            <span class="visually-hidden">Перейти в Twitter.</span>
+          </button>
         </li>
-        <li class="footer-item">
-          <a class="footer-item-img-logo-youtube-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <img class="footer-item-img-logo-youtube" src="#" alt="логотип ссылка yuotube"></a>
+        <li class="button-icon-item">
+          <button class="button-icon-youtube">
+            <span class="visually-hidden">Перейти в Youtube.</span>
+          </button>
         </li>
       </ul>
-      <address class="footer-adress">
-        <span class="footer-adress-telefon">+7 (812) 812-12-12</span>
+      <address class="adress-tel">
+        <a href="tel:+78128121212">+7(812) 812-12-12</a>
       </address>
       <a class="footer-logo-html-academy-link" href="https://htmlacademy.ru/">
-        <img class="footer-logo-html-academy" src="#" alt="логотип ссылка html academy"></a>
+      <img class="footer-logo-html-academy" src="#" alt="логотип ссылка html academy"></a>
     </footer>
   </body>
 </html>
