@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="navigation">
         <a class="logo-link">
-          <img src="#" href="index.html" alt="Логотип сайта города в Аризоне Седона">
+          <img src="images\main page\header\logo.svg" href="index.html" alt="Логотип сайта города в Аризоне Седона">
         </a>
         <ul class="navigetion-list">
           <li class="navigation-item">
@@ -58,7 +58,7 @@
           </li>
         </ul>
       </header>
-      <!--Блок форм настройки поиска-->
+          <!--Блок форм настройки поиска-->
       <section class="catalog-products">
         <h2 class="visually-hidden">Филтр поиска</h2>
         <p>Гостиницы Седоны</p>
@@ -86,8 +86,6 @@
               </li>
             </ul>
           </fieldset>
-        </form>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-title">Тип жилья</legend>
             <ul class="catalog-list">
@@ -119,14 +117,14 @@
           </button>
         </form>
       </section>
-      <!--Выпадающий список-->
+            <!--Выпадающий список-->
       <p>Найдено гастинец:<span>38</span></p>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
         <option value="popular">Популярные</option>
         <option value="expansive">Сначала дорогие</option>
       </select>
-      <!--Интерфейс настройки отображения страницы-->
+          <!--Интерфейс настройки отображения страницы-->
       <ul class="display-list">
         <li class="display-list-item">
           <a class="button-card-style" href="#">
@@ -144,62 +142,71 @@
           </a>
         </li>
       </ul>
-      <!--Блок карточек-->
+          <!--Блок карточек-->
       <section class="card">
         <h2 class="visually-hidden">Найдено товаров</h2>
         <ul class="card-list">
           <li class="card-item">
             <div class="card-wrapper">
               <a class="card-link" href="#">
-                <img class="card-img" src="" alt="Гостиница Amara Resort & Spa">
+                <img class="card-img" src="images\catalog\card\HotelAmaraResortSpa-1.jpg" alt="Гостиница Amara Resort & Spa">
               </a>
               <h3 class="card-title">Amara Resort & Spa</h3>
               <p class="product-title">Гостиница</p>
               <p class="product-price">От 4000р</p>
               <a class="card-button" href="#">Подробнее</a>
               <a class="card-button" href="#">В избранное</a>
+              <p class="rating-stars"></p>
+              <p class="rating-description">Рейтинг</p>
             </div>
           </li>
           <li class="card-item">
             <div class="card-wrapper">
               <a class="card-link" href="#">
-                <img class="card-img" src="" alt="Гостиница Desert Quail Inn">
+                <img class="card-img" src="images\catalog\card\DesertQuailInn-2.jpg" alt="Гостиница Desert Quail Inn">
               </a>
               <h3 class="card-title">Desert Quail Inn</h3>
               <p class="product-title">Гостиница</p>
               <p class="product-price">От 3000р</p>
               <a class="card-button" href="#">Подробнее</a>
               <a class="card-button" href="#">В избранное</a>
+              <p class="rating-stars"></p>
+              <p class="rating-description">Рейтинг</p>
             </div>
           </li>
           <li class="card-item">
             <div class="card-wrapper">
               <a class="card-link" href="#">
-                <img class="card-img" src="" alt="Гостиница Villas at Poco Diablo">
+                <img class="card-img" src="images\catalog\card\VillasAtPocoDiablo-3.jpg" alt="Гостиница Villas at Poco Diablo">
               </a>
               <h3 class="card-title">Villas at Poco Diablo</h3>
               <span class="product-title">Гостиница</span>
               <span class="product-price">От 2000р</span>
               <a class="card-button" href="#">Подробнее</a>
               <a class="card-button" href="#">В избранное</a>
+              <p class="rating-stars"></p>
+              <p class="rating-description">Рейтинг</p>
             </div>
           </li>
           <li class="card-item">
             <div class="card-wrapper">
               <a class="card-link" href="#">
-                <img class="card-img" src="" alt="Гостиница GreenTree Inn">
+                <img class="card-img" src="images\catalog\card\GreenTreenInn-4.jpg" alt="Гостиница GreenTree Inn">
               </a>
               <h3 class="card-title">GreenTree Inn</h3>
               <p class="product-title">Гостиница</p>
               <p class="product-price">От 3000р</p>
               <a class="card-button" href="#">Подробнее</di>
               <a class="card-button" href="#">В избранное</a>
+              <p class="rating-stars"></p>
+              <p class="rating-description">Рейтинг</p>
             </div>
           </li>
         </ul>
         <button type="button" class="button-load-more">
           Загрузить ещё
         </button>
+            <!--Блок пагинации-->
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev pagination-disable" href="#">
@@ -228,14 +235,16 @@
             <a class="pagination-link pagination-next" href="#">
               <span class="visually-hidden">Следкющая страница</span>
             </a>
+            <!--Выпадающий список сортировки-->
         </ul>
+        <p class="description">гостинец на странице</p>
         <select class="select-control" aria-label="Сортировка">
           <option value="four">4</option>
           <option value="six">6</option>
           <option value="eight">8</option>
         </select>
       </section>
-        <!--Блок подписки-->
+            <!--Блок подписки-->
       <section class="mailing-list">
         <h2 class="visually-hidden" >Подписка</h2>
         <p>Подпишитесь на рассылку</p>
@@ -274,7 +283,7 @@
         <a class="adress-link-tel" href="tel:+78128121212">+7(812) 812-12-12</a>
       </address>
       <a class="footer-logo-html-academy-link" href="https://htmlacademy.ru/">
-        <img class="footer-logo-html-academy" src="#" alt="логотип ссылка html academy">
+        <img class="footer-logo-html-academy" src="images\main page\footer\logoHtmlAcademy.svg" width="115" height="34" alt="логотип ссылка html academy">
       </a>
     </footer>
   </body>
