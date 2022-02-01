@@ -1,3 +1,119 @@
-@ font-face {
-  
+@font-face {
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
 }
+
+@font-face {
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-style: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  background-color: #fff;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #333;
+}
+
+.action-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigetion-list-user a {
+  text-decoration: none;
+  color: #000;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333;
+}
+
+.edge-list {
+  list-style: none;
+}
+
+.edge-list .edge-sublist {
+  list-style: none;
+}
+
+.edge-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.edge-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.edge-number {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333;
+}
+
+.search-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.page-footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+.adress-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+
+
