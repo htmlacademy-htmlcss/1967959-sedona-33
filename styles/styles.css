@@ -15,30 +15,28 @@
 }
 
 body {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-style: 400;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000;
   background-color: #fff;
 }
 
+/*Главный экран*/
+.main-scrin {
+  background-image: url("../images/main page/mainScrin/index-background.jpg");
+  background-size: 100% auto;
+}
+
+/*Навигация*/
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
-  color: #333;
-}
-
-.action-link {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
+  color: #000;
 }
 
 .navigetion-list-user a {
@@ -46,6 +44,22 @@ body {
   color: #000;
 }
 
+/*Кнопка в навигации "хочу сюда!"*/
+.action-link {
+  text-decoration: none;
+  text-align: center;
+  background-color: #756257;
+}
+
+.action-link span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/*Вступительные заголовки секций*/
 .section-title {
   font-weight: 700;
   font-size: 30px;
@@ -54,6 +68,7 @@ body {
   text-align: center;
 }
 
+/*Поясняющий текст после вступительных заголовков*/
 .section-description {
   font-weight: 400;
   font-size: 22px;
@@ -62,6 +77,7 @@ body {
   color: #333;
 }
 
+/*Бок преимуществ*/
 .edge-list {
   list-style: none;
 }
@@ -74,32 +90,61 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
   text-align: center;
 }
 
 .edge-description {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   text-align: center;
 }
 
 .edge-number {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   text-align: center;
   color: #333;
 }
 
+/*Кнопка поиска гостиниц*/
 .search-button {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #756257;
 }
 
+/*Форма подпискм*/
+.form-mailing {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.mailing-list {
+  background: url("../images/main page/malling/background.jpg");
+  background-size: 100% auto;
+  color: #fff;
+}
+
+.section-description {
+  color: #fff;
+}
+
+.button-subscription {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  background-color: #83B3D3;
+  border: none;
+  color: #fff;
+}
+
+/*Футер*/
 .page-footer a {
   text-decoration: none;
   color: #000;
