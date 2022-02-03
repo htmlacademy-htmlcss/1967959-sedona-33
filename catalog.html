@@ -12,7 +12,7 @@
         <a class="logo-link">
           <img src="images/main page/header/logo.svg" width="139" height="70" alt="Логотип сайта города в Аризоне Седона">
         </a>
-        <ul class="navigetion-list">
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -61,7 +61,7 @@
                 <!--Блок форм настройки поиска-->
       <section class="catalog-products">
         <h2 class="visually-hidden">Филтр поиска</h2>
-        <p>Гостиницы Седоны</p>
+        <p class="catalog-products-title">Гостиницы Седоны</p>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-title">Инфроструктура</legend>
@@ -69,19 +69,19 @@
               <li class="catalog-item">
                 <label class="description">
                   <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                  Бассейн
+                  <span>Бассейн</span>
                 </label class="description">
               </li>
               <li class="catalog-item">
                 <label class="description">
                   <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
+                  <span>Парковка</span>
                 </label>
               </li>
               <li class="catalog-item">
                 <label class="description">
                   <input class="control-input" type="checkbox" name="wi-fi" >
-                  WI-FI
+                  <span>WI-FI</span>
                 </label>
               </li>
             </ul>
@@ -92,19 +92,19 @@
               <li class="catalog-item">
                 <label class="description">
                   <input class="control-input" type="radio" name="product-group" value="hotel" checked>
-                  Гостиница
+                  <span>Гостиница</span>
                 </label>
               </li>
-              <li class="catalog--item">
+              <li class="catalog-item">
                 <label class="description">
                   <input class="control-input" type="radio" name="product-group" value="motel">
-                  Мотель
+                  <span>Мотель</span>
                 </label>
               </li>
               <li class="catalog-item">
                 <label class="description">
                   <input class="control-input" type="radio" name="product-group" value="apartaments">
-                  Апартаменты
+                  <span>Апартаменты</span>
                 </label>
               </li>
             </ul>
@@ -118,7 +118,7 @@
         </form>
       </section>
             <!--Выпадающий список-->
-      <p>Найдено гастинец:<span>38</span></p>
+      <p class="total-serch-hotel">Найдено гастинец:<span>38</span></p>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
         <option value="popular">Популярные</option>
@@ -152,10 +152,10 @@
                 <img class="card-img" src="images/catalog/card/HotelAmaraResortSpa-1.jpg" width="299" height="206" alt="Гостиница Amara Resort & Spa">
               </a>
               <h3 class="card-title">Amara Resort & Spa</h3>
-              <p class="product-title">Гостиница</p>
-              <p class="product-price">От 4000р</p>
+              <p class="product-title-price">Гостиница</p>
+              <p class="product-title-price">От 4000р</p>
               <a class="card-button" href="#">Подробнее</a>
-              <a class="card-button" href="#">В избранное</a>
+              <a class="card-button-favorit" href="#">В избранное</a>
               <p class="rating-stars"></p>
               <p class="rating-description">Рейтинг</p>
             </div>
@@ -167,10 +167,10 @@
                 width="299" height="206" alt="Гостиница Desert Quail Inn">
               </a>
               <h3 class="card-title">Desert Quail Inn</h3>
-              <p class="product-title">Гостиница</p>
-              <p class="product-price">От 3000р</p>
+              <p class="product-title-price">Гостиница</p>
+              <p class="product-title-price">От 3000р</p>
               <a class="card-button" href="#">Подробнее</a>
-              <a class="card-button" href="#">В избранное</a>
+              <a class="card-button-favorit" href="#">В избранное</a>
               <p class="rating-stars"></p>
               <p class="rating-description">Рейтинг</p>
             </div>
@@ -182,10 +182,10 @@
                width="299" height="206" alt="Гостиница Villas at Poco Diablo">
               </a>
               <h3 class="card-title">Villas at Poco Diablo</h3>
-              <span class="product-title">Гостиница</span>
-              <span class="product-price">От 2000р</span>
+              <p class="product-title-price">Гостиница</p>
+              <p class="product-title-price">От 2000р</p>
               <a class="card-button" href="#">Подробнее</a>
-              <a class="card-button" href="#">В избранное</a>
+              <a class="card-button-favorit" href="#">В избранное</a>
               <p class="rating-stars"></p>
               <p class="rating-description">Рейтинг</p>
             </div>
@@ -197,10 +197,10 @@
                 width="299" height="206" alt="Гостиница GreenTree Inn">
               </a>
               <h3 class="card-title">GreenTree Inn</h3>
-              <p class="product-title">Гостиница</p>
-              <p class="product-price">От 3000р</p>
-              <a class="card-button" href="#">Подробнее</di>
-              <a class="card-button" href="#">В избранное</a>
+              <p class="product-title-price">Гостиница</p>
+              <p class="product-title-price">От 3000р</p>
+              <a class="card-button" href="#">Подробнее</a>
+              <a class="card-button-favorit" href="#">В избранное</a>
               <p class="rating-stars"></p>
               <p class="rating-description">Рейтинг</p>
             </div>
@@ -217,8 +217,42 @@
             </a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">1</a>
+            <div class="background-link">
+              <a class="pagination-link" href="#">1</a>
+            </div>
           </li>
+          <li class="pagination-item">
+            <div class="background-link">
+              <a class="pagination-link" href="#">1</a>
+            </div>
+          </li>
+          <li class="pagination-item">
+            <div class="background-link">
+              <a class="pagination-link" href="#">2</a>
+            </div>
+          </li>
+          <li class="pagination-item">
+            <div class="background-link">
+              <a class="pagination-link" href="#">3</a>
+            </div>
+          </li>
+          <li class="pagination-item">
+            <div class="background-link">
+              <a class="pagination-link" href="#">4</a>
+            </div>
+          </li>
+          <li class="pagination-item">
+            <div class="background-link">
+              <a class="pagination-link" href="#">...</a>
+            </div>
+          </li>
+          <li class="pagination-item">
+            <div class="background-link">
+              <a class="pagination-link" href="#">10</a>
+            </div>
+          </li>
+
+<!---
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
           </li>

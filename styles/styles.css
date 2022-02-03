@@ -23,11 +23,54 @@ body {
   color: #000;
   background-color: #fff;
 }
+/*спиоск главной навигации*/
+.navigation-list {
+  list-style: none;
+}
+
+/*Список юзер навигации*/
+.navigetion-list-user {
+  list-style: none;
+}
+
+/*Список иконок в футоре*/
+.icon-list {
+  list-style: none;
+}
+
+/*Список крошек в каталоге*/
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-list a {
+  text-decoration: none;
+}
+
+/*Сприсок отображения карточек
+в каталоге*/
+.display-list {
+  list-style: none;
+}
+
+.display-list a {
+  text-decoration: none;
+}
+
+/*Список карточе в каталоге*/
+.card-list {
+  list-style: none;
+}
+
+.pagination {
+  list-style: none;
+}
 
 /*Главный экран*/
 .main-scrin {
   background-image: url("../images/main page/mainScrin/index-background.jpg");
   background-size: 100% auto;
+  background-color: #83B3D3;
 }
 
 /*Навигация*/
@@ -39,6 +82,7 @@ body {
   color: #000;
 }
 
+/*Список ссылок юзер навигации*/
 .navigetion-list-user a {
   text-decoration: none;
   color: #000;
@@ -86,6 +130,7 @@ body {
   list-style: none;
 }
 
+/*Заголовки*/
 .edge-title {
   font-weight: 700;
   font-size: 24px;
@@ -94,11 +139,13 @@ body {
   text-align: center;
 }
 
+/*Поясняющий текст*/
 .edge-description {
   font-weight: 400;
   text-align: center;
 }
 
+/*Нумерация преимуществ*/
 .edge-number {
   font-weight: 400;
   text-align: center;
@@ -126,6 +173,7 @@ body {
 .mailing-list {
   background: url("../images/main page/malling/background.jpg");
   background-size: 100% auto;
+  background-color: #83B3D3;
   color: #fff;
 }
 
@@ -133,6 +181,7 @@ body {
   color: #fff;
 }
 
+/*Кнопка подписки*/
 .button-subscription {
   font-family: "PT Sans";
   font-weight: 700;
@@ -150,6 +199,7 @@ body {
   color: #000;
 }
 
+/*Контактный телефон*/
 .adress-link {
   font-style: normal;
   font-weight: 400;
@@ -160,5 +210,133 @@ body {
   color: #000;
 }
 
+/*Каталог*/
+.catalog-products {
+  background-image: url("../images/catalog/catalog-background.jpg");
+  background-size: 100% auto;
+  background-color: #83B3D3;
+  color: #fff;
+}
 
+/*Заголовок экрана фильтров*/
+.catalog-products-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+}
 
+/*Заголовки фильтров*/
+.catalog-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/*Список фильтров*/
+.catalog-list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/*Кнопки фильтров*/
+.button-filter {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color: #83B3D3;
+}
+
+/*Найдено гастинец*/
+.total-serch-hotel {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+/*Выпадающий список сортировки
+отображения*/
+.select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  border-color: #E5E5E5;
+}
+
+/*Заголовки карточек*/
+.card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/*Описание, цена*/
+.product-title-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+}
+
+/*Кнопка подробнее*/
+.card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #756257;
+}
+
+/*Кнопка в избранное*/
+.card-button-favorit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #83B3D3;
+}
+
+/*рейтинг*/
+.rating-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height:20px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+/*Кнопка загрузть еще*/
+.button-load-more {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  background-color: #83B3D3;
+}
+
+/*Пагтнация фон*/
+.background-link {
+  width: 55px;
+  height: 55px;
+  background-color: #83B3D3;
+  margin-bottom: 10px;
+}
+
+/*Пагинация цифры*/
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+  text-decoration: none;
+}
