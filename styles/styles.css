@@ -19,7 +19,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 24px;
   color: #000;
   background-color: #fff;
 }
@@ -68,10 +68,11 @@ body {
 
 /*Главный экран*/
 .main-scrin {
-  background-image: url("../images/main page/mainScrin/index-background.jpg");
+  background-image: url("../images/mainPage/mainScrin/indexBackground.jpg");
   background-size: 100% auto;
   background-color: #83B3D3;
 }
+
 
 /*Навигация*/
 .navigation-link {
@@ -89,10 +90,12 @@ body {
 }
 
 /*Кнопка в навигации "хочу сюда!"*/
-.action-link {
+.button-action-user-navigation {
   text-decoration: none;
   text-align: center;
   background-color: #756257;
+  width: 160px;
+  height: 37px;
 }
 
 .action-link span {
@@ -130,6 +133,7 @@ body {
   list-style: none;
 }
 
+
 /*Заголовки*/
 .edge-title {
   font-weight: 700;
@@ -152,45 +156,108 @@ body {
   color: #333;
 }
 
-/*Кнопка поиска гостиниц*/
-.search-button {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+/*Описание преимуществ*/
+.edge-description {
+  color: #333;
+}
+
+/*Блок №1 с картинкой*/
+.edge-wrapper-number1 {
+  background-color: #83B3D3;
   color: #fff;
-  background-color: #756257;
 }
-
-/*Форма подпискм*/
-.form-mailing {
-  font-size: 18px;
-  line-height: 26px;
+/*Белый текс*/
+.edge-number-white{
+  text-align: center;
+  color: #fff;
 }
-
-.mailing-list {
-  background: url("../images/main page/malling/background.jpg");
-  background-size: 100% auto;
+.edge-description-white{
+  text-align: center;
+  color: #fff;
+}
+/*Блок №2 с картинкой*/
+.edge-wrapper-number2 {
   background-color: #83B3D3;
   color: #fff;
 }
 
-.section-description {
+/*Блоки без нумерации с иконками*/
+.edge-wrapper-icon-hous {
+  background: rgba(131, 179, 211, 0.12)
+}
+.edge-wrapper-icon-suvenir {
+  background: rgba(131, 179, 211, 0.12)
+}
+
+/*Блоки преимуществ №3/4/5*/
+.edge-wrapper-number3 {
+  background: rgba(131, 179, 211, 0.12)
+}
+.edge-wrapper-number4{
+  background: rgba(131, 179, 211, 0.2);
+}
+.edge-wrapper-number5 {
+  background: rgba(131, 179, 211, 0.12)
+}
+
+/*Кнопка поиска гостиниц*/
+.search-button-hotell {
+  text-align: center;
+  background-color: #756257;
+  width: 580px;
+  height: 60px;
+}
+.search-button-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
 }
 
+/*Форма подписки*/
+.mailing-list-index {
+  background: url("../images/mainPage/malling/backgroundMalig.jpg");
+  background-size: 100% auto;
+  width: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+}
+
+/*Описание текст*/
+.mailing-description-index {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+}
+
 /*Кнопка подписки*/
-.button-subscription {
+.button-subscription-mailing-index {
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  width: 200px;
+  height: 60px;
   text-transform: uppercase;
   background-color: #83B3D3;
   border: none;
   color: #fff;
+}
+
+ /*Поле ввода*/
+.input-user-text-mailing-index {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 26px;
+  background-color:#F2F2F2;
+  border-color: #F2F2F2;
+  color: #000;
+  width: 600px;
+  height: 50px;
 }
 
 /*Футер*/
@@ -210,9 +277,13 @@ body {
   color: #000;
 }
 
+
+
+
+
 /*Каталог*/
 .catalog-products {
-  background-image: url("../images/catalog/catalog-background.jpg");
+  background-image: url("../images/catalog/catalogBackground.jpg");
   background-size: 100% auto;
   background-color: #83B3D3;
   color: #fff;
@@ -243,34 +314,40 @@ body {
 .button-filter {
   font-weight: 700;
   font-size: 16px;
+  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  border: none;
+  text-align: center;
   color: #fff;
   background-color: #83B3D3;
+  width: 160px;
+  height: 48px;
 }
 
 /*Найдено гастинец*/
 .total-serch-hotel {
   font-weight: 700;
+  text-transform: uppercase;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 39px;
 }
 
 /*Выпадающий список сортировки
 отображения*/
-.select-control {
+.select-total-serch-hotel {
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
   border-color: #E5E5E5;
+  width: 287px;
+  height: 48px;
 }
 
 /*Заголовки карточек*/
 .card-title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 32px;
 }
 
 /*Описание, цена*/
@@ -282,14 +359,17 @@ body {
 }
 
 /*Кнопка подробнее*/
-.card-button {
+.card-button-more {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: #fff;
   background-color: #756257;
+  width: 133px;
+  height: 37px;
 }
 
 /*Кнопка в избранное*/
@@ -299,28 +379,81 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: #fff;
-  background-color: #83B3D3;
+  background-color:#83B3D3;
+  width: 133px;
+  height: 37px;
+}
+
+.card-button-link {
+  text-decoration: none;
+  color: #fff;
 }
 
 /*рейтинг*/
 .rating-description {
   font-weight: 400;
   font-size: 16px;
-  line-height:20px;
+  line-height:21px;
   text-transform: uppercase;
   color: #333;
 }
 
 /*Кнопка загрузть еще*/
 .button-load-more {
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
+  line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  width: 620px;
+  height: 60px;
   border: none;
   color: #fff;
   background-color: #83B3D3;
+}
+
+/*Форма подписки в каталоге*/
+.mailing-form-catalog {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.mailing-list-catalog {
+  background-color: #fff;
+  background-size: 100% auto;
+  color: #000;
+}
+
+.mailing-description-catalog {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+}
+
+/*Кнопка подписки*/
+.button-subscription-mailing-catalog {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  width: 200px;
+  height: 60px;
+  text-transform: uppercase;
+  background-color: #83B3D3;
+  border: none;
+  color: #fff;
+}
+
+.input-user-text-mailing-catalog {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  width: 600px;
+  height: 50px;
 }
 
 /*Пагтнация фон*/
@@ -339,4 +472,21 @@ body {
   text-decoration: none;
   padding: 0;
   text-decoration: none;
+}
+.background-link link-black {
+  background-color: #E5E5E5;
+  color: #000;
+}
+
+/*Гостиниц на странице*/
+.description-control {
+  color: #333;
+}
+.select-control-pages {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 24px;
+  color: #333;
+  width: 160px;
+  height: 48px;
 }
