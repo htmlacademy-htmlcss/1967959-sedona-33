@@ -13,8 +13,12 @@
   font-weight: 400;
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -473,9 +477,21 @@ body {
   padding: 0;
   text-decoration: none;
 }
-.background-link link-black {
-  background-color: #E5E5E5;
+
+.pagination-link-black {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0;
+  text-decoration: none;
   color: #000;
+}
+.background-link-grey {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 10px;
+  background-color: #E5E5E5;
+}
 }
 
 /*Гостиниц на странице*/
