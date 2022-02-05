@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
               <!--Хедер с главной навигацией по сайту-->
     <header class="page-header">
       <nav class="navigation">
         <a class="logo-link">
-          <img src="images\main page\header\logo.svg" width="139" height="70" alt="Логотип сайта города в Аризоне Седона">
+          <img src="images/mainPage/header/logo.svg" width="139" height="70"
+          alt="Логотип сайта города в Аризоне Седона">
         </a>
-        <ul class="navigetion-list">
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link">Главная</a>
           </li>
@@ -33,41 +35,48 @@
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
+          <li class="navigation-item">
+            <div class="button-action-user-navigation">
+              <a class="action-link" href="#">
+                <span>Хочу сюда!</span>
+              </a>
+            </div>
+          </li>
         </ul>
-        <li class="navigation-item">
-          <a class="activ-link" href="#">
-            <span>Хочу сюда!</span>
-          </a>
-        </li>
       </nav>
     </header>
     <main class="main-index">
-        <h1 class="visual-hidden">Седона — город в Аризоне</h1>
-        <img class="img-screen" src="images\main page\mainScrin\welcome.svg" width="458" height="352" alt="Добро пожаловать в Седона горд большого каньёна">
+      <div class="main-scrin">
+          <h1 class="visual-hidden">Седона — город в Аризоне</h1>
+          <img class="img-screen" src="images/mainPage/mainScrin/welcome.svg"
+          width="458" height="352"
+          alt="Слоган добро пожаловать в Седона горд большого каньона">
+      </div>
               <!--Блок преимуществ-->
         <section class="adge">
           <h2 class="visual-hidden">Преимущества</h2>
-          <p>
+          <p class="section-title">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </p>
-          <p class="edge-description">Рассмотрим 5 причин,
+          <p class="section-description">Рассмотрим 5 причин,
             по которым Седона круче, чем Гранд-Каньон!
           </p>
               <!--Нумерованный список преимуществ с вложенным списком-->
           <ol  class="edge-list">
             <li class="edge-item edge-item-long">
-              <div class="edge-wrapper">
+              <div class="edge-wrapper-number1">
                 <h3 class="edge-title">Настоящий городок</h3>
-                <p class="edge-number">-1-</p>
-                <p class="edge-description">Седона — не аттракцион для туристов,
+                <p class="edge-number-white">-№1-</p>
+                <p class="edge-description-white">Седона — не аттракцион для туристов,
                   там течёт своя жизнь</p>
               </div>
               <div class="edge-img">
-                <img src="images\main page\advanteges\photo-hotel.jpg" width="800" height="384" alt="Фотография красивого местного ателя">
+                <img src="images/mainPage/advanteges/photoHotel.jpg"
+                width="800" height="384" alt="Фотография красивого местного отеля">
               </div>
               <ul class="edge-sublist">
                 <li class="edge-item">
-                  <div class="edge-wrapper">
+                  <div class="edge-wrapper-icon-hous">
                     <h4 class="edge-title">Жильё</h4>
                     <p class="edge-description">Рекомендуем пожить
                       в настоящем мотеле, всё как в кино!
@@ -75,7 +84,7 @@
                   </div>
                 </li>
                 <li class="edge-item">
-                  <div class="edge-wrapper">
+                  <div class="edge-wrapper-icon-food">
                     <h4 class="edge-title">Еда</h4>
                     <p class="edge-description">Всегда заказывайте топовый
                       фирменный бургер, вы не разочаруетесь!
@@ -83,7 +92,7 @@
                   </div>
                 </li>
                 <li class="edge-item">
-                  <div class="edge-wrapper">
+                  <div class="edge-wrapper-icon-suvenir">
                     <h4 class="edge-title">Сувениры</h4>
                     <p class="edge-description">Не только китайского,
                       но и настоящего местного производства!
@@ -94,36 +103,37 @@
             </li>
             <li class="edge-item edge-item-long">
               <div class="edge-img">
-                <img src="images\main page\advanteges\grandCanyon.jpg" alt="Фотография большого каньёна">
+                <img src="images/mainPage/advanteges/grandCanyon.jpg"
+                width="800" height="384" alt="Фотография большого каньона">
               </div>
-              <div class="edge-wrapper">
+              <div class="edge-wrapper-number2">
                 <h3 class="edge-title">Там есть мост дьявола</h3>
-                <p class="edge-number">-2-</p>
-                <p class="edge-description">Да, по нему можно пройти!
+                <p class="edge-number-white">-№2-</p>
+                <p class="edge-description-white">Да, по нему можно пройти!
                   Если вы осмелитесь, разумеется
                 </p>
               </div>
             </li>
             <li class="edge-item">
-              <div class="edge-wrapper">
+              <div class="edge-wrapper-number3">
                 <h3 class="edge-title">Небольшая площадь</h3>
-                <p class="edge-number">-3-</p>
+                <p class="edge-number">-№3-</p>
                 <p class="edge-description">
                   Все достопримечательности находятся очень близко
                 </p>
               </div>
             </li>
             <li class="edge-item">
-              <div class="edge-wrapper">
+              <div class="edge-wrapper-number4">
                 <h3 class="edge-title">Красивая дорога</h3>
-                <p class="edge-number">-4-</p>
+                <p class="edge-number">-№4-</p>
                 <p class="edge-description">
                   Ехать в Седону из Лас-Вегаса совсем не скучно!
                 </p>
               </div>
             </li>
             <li class="edge-item">
-              <div class="edge-wrapper">
+              <div class="edge-wrapper-number5">
                 <h3 class="edge-title">Мало туристов</h3>
                 <p class="edge-number">-5-</p>
                 <p class="edge-description">
@@ -136,30 +146,31 @@
               <!--Блок поиска гостиниц-->
       <section class="search">
         <h2 class="visual-hidden">Поиск гостиницы</h2>
-        <p>Заинтересовались?</p>
-        <p class="search-description">Укажите предполагаемые даты поездки,
+        <p class="section-title">Заинтересовались?</p>
+        <p class="section-description">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="search-button" href="catalog.html">Поиск гостиницы в Седоне</a>
+        <div class="search-button-hotell">
+          <a class="search-button-link" href="catalog.html">Поиск гостиницы в Седоне</a>
+        </div>
       </section>
         <!--Блок подписки-->
-      <section class="mailing-list">
-        <h2 class="visual-hidden">Подписка</h2>
-        <p>
-          Подпишитесь на рассылку
-        </p>
-        <p class="mailing-description">Только полезная информация
-          и никакого спама, честное бойскаутское!
-        </p>
-        <form action="https://echo.htmlacademy.ru/" class="mailing-form">
-          <label class="description>
-            <span class="visually-hidden">
-              Ваш e-mail
-            </span>
-            <input type="text" name="mailing-form-user" placeholder="e-mail" required>
-          </label>
-          <button type="submit" class="button-subscription">Подписаться</button>
-        </form>
+      <section class="mailing-list-index">
+          <h2 class="visual-hidden">Подписка</h2>
+          <p class="section-title">
+            Подпишитесь на рассылку
+          </p>
+          <p class="section-description-mailing-index">Только полезная информация
+            и никакого спама, честное бойскаутское!
+          </p>
+          <form action="https://echo.htmlacademy.ru/" class="mailing-form-index" method="get">
+            <label class="description>
+              <span class=" visually-hidden">Ваш e-mail</span>
+              <input class="input-user-text-mailing-index" type="text" name="mailing-form-user"
+              placeholder="Ваш e-mail" required>
+            </label>
+            <button type="submit" class="button-subscription-mailing-index">Подписаться</button>
+          </form>
       </section>
     </main>
               <!--Футер-->
@@ -182,11 +193,11 @@
         </li>
       </ul>
       <address class="adress-tel">
-        <a class="adress-link" href="tel:+78128121212">+7(812) 812-12-12</a>
+        <a class="adress-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
       <a class="footer-logo-link-tel" href="https://htmlacademy.ru/">
-        <img class="logo-img-link" src="images\main page\footer\logoHtmlAcademy.svg" width="115" height="34" alt="логотип ссылка,
-        образовательного центра html academy">
+        <img class="logo-img-link" src="images/mainPage/footer/logoHtmlAcademy.svg"
+        width="115" height="34" alt="логотип ссылка, образовательного центра html academy">
       </a>
     </footer>
   </body>
