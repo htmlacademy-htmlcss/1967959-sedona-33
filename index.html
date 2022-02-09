@@ -46,13 +46,15 @@
       </nav>
     </header>
     <main class="main-index">
-      <div class="main-scrin">
+      <div class="main-container">
+        <div class="main-scrin">
           <h1 class="visual-hidden">Седона — город в Аризоне</h1>
-          <img class="img-screen" src="images/mainPage/mainScrin/welcome.svg"
-          width="458" height="352"
-          alt="Слоган добро пожаловать в Седона горд большого каньона">
-      </div>
-              <!--Блок преимуществ-->
+          <img class="img-screen" src="images/mainPage/mainScrin/welcome.svg" width="458" height="352"
+            alt="Слоган добро пожаловать в Седона горд большого каньона">
+          <img class="vector-screen" src="images/mainPage/mainScrin/indexVector.svg" width="1200" height="57"
+            alt="декоративный элемент главого изображения">
+        </div>
+        <!--Блок преимуществ-->
         <section class="adge">
           <h2 class="visual-hidden">Преимущества</h2>
           <p class="section-title">
@@ -61,8 +63,8 @@
           <p class="section-description">Рассмотрим 5 причин,
             по которым Седона круче, чем Гранд-Каньон!
           </p>
-              <!--Нумерованный список преимуществ с вложенным списком-->
-          <ol  class="edge-list">
+          <!--Нумерованный список преимуществ с вложенным списком-->
+          <ol class="edge-list">
             <li class="edge-item edge-item-long">
               <div class="edge-wrapper-number1">
                 <h3 class="edge-title">Настоящий городок</h3>
@@ -71,8 +73,8 @@
                   там течёт своя жизнь</p>
               </div>
               <div class="edge-img">
-                <img src="images/mainPage/advanteges/photoHotel.jpg"
-                width="800" height="384" alt="Фотография красивого местного отеля">
+                <img src="images/mainPage/advanteges/photoHotel.jpg" width="800" height="384"
+                  alt="Фотография красивого местного отеля">
               </div>
               <ul class="edge-sublist">
                 <li class="edge-item">
@@ -103,8 +105,8 @@
             </li>
             <li class="edge-item edge-item-long">
               <div class="edge-img">
-                <img src="images/mainPage/advanteges/grandCanyon.jpg"
-                width="800" height="384" alt="Фотография большого каньона">
+                <img src="images/mainPage/advanteges/grandCanyon.jpg" width="800" height="384"
+                  alt="Фотография большого каньона">
               </div>
               <div class="edge-wrapper-number2">
                 <h3 class="edge-title">Там есть мост дьявола</h3>
@@ -142,36 +144,37 @@
               </div>
             </li>
           </ol>
-      </section>
-              <!--Блок поиска гостиниц-->
-      <section class="search">
-        <h2 class="visual-hidden">Поиск гостиницы</h2>
-        <p class="section-title">Заинтересовались?</p>
-        <p class="section-description">Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне
-        </p>
-        <div class="search-button-hotell">
-          <a class="search-button-link" href="catalog.html">Поиск гостиницы в Седоне</a>
-        </div>
-      </section>
+        </section>
+        <!--Блок поиска гостиниц-->
+        <section class="search">
+          <h2 class="visual-hidden">Поиск гостиницы</h2>
+          <p class="section-title">Заинтересовались?</p>
+          <p class="section-description">Укажите предполагаемые даты поездки,
+            и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+          <div class="search-button-hotell">
+            <a class="search-button-link" href="catalog.html">Поиск гостиницы в Седоне</a>
+          </div>
+        </section>
         <!--Блок подписки-->
-      <section class="mailing-list-index">
+        <section class="mailing-list-index">
           <h2 class="visual-hidden">Подписка</h2>
           <p class="section-title">
             Подпишитесь на рассылку
           </p>
-          <p class="section-description-mailing-index">Только полезная информация
+          <p class="mailing-description-index">Только полезная информация
             и никакого спама, честное бойскаутское!
           </p>
           <form action="https://echo.htmlacademy.ru/" class="mailing-form-index" method="get">
             <label class="description>
-              <span class=" visually-hidden">Ваш e-mail</span>
-              <input class="input-user-text-mailing-index" type="text" name="mailing-form-user"
-              placeholder="Ваш e-mail" required>
+                      <span class=" visually-hidden">Ваш e-mail</span>
+              <input class="input-user-text-mailing-index" type="text" name="mailing-form-user" placeholder="Ваш e-mail"
+                required>
             </label>
             <button type="submit" class="button-subscription-mailing-index">Подписаться</button>
           </form>
-      </section>
+        </section>
+      </div>
     </main>
               <!--Футер-->
     <footer class="page-footer">
