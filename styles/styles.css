@@ -33,6 +33,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  width: 1200px;
 }
 /*спиоск главной навигации*/
 .navigation-list {
