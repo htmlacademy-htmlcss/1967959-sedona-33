@@ -33,7 +33,33 @@ body {
 
 .main-container {
   flex-grow: 1;
-  width: 1200px;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 345px;
+  height: 66px;
+}
+
+.navigetion-list-user {
+  margin: 0;
+  padding: 0;
+  width: 264;
+  height: 66px;
+  margin-left: auto;
+}
+
+.page-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
 }
 /*спиоск главной навигации*/
 .navigation-list {
@@ -79,11 +105,26 @@ body {
 }
 
 /*Главный экран*/
-.main-scrin {
+.image-scrin {
   background-image: url("../images/mainPage/mainScrin/indexBackground.jpg");
-  background-size: 100% auto;
+  width: 1200px;
+  height: 485px;
   background-color: #83B3D3;
 }
+
+.img-screen {
+  background-image: url("../images/mainPage/mainScrin/welcome.svg");
+  width: 458px;
+  height: 352px;
+}
+
+.vector-screen {
+  background-image: url("../images/mainPage/mainScrin/indexVector.svg");
+  width: 1200px;
+  height: 57px;
+}
+
+
 
 
 /*Навигация*/
