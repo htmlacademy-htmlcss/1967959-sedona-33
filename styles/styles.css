@@ -15,7 +15,7 @@
   font-display: swap;
 }
 html {
-  height: 100%;
+
 }
 
 body {
@@ -28,8 +28,18 @@ body {
   background-color: #fff;
 }
 
+.page-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 1200px;
+
+}
+
 /*Сброс стилей списков*/
-/*список навигации*/
 .navigation-list {
   list-style: none;
 }
@@ -63,9 +73,23 @@ body {
 .pagination {
   list-style: none;
 }
+.edge-list {
+  list-style: none;
+}
+.edge-list .edge-sublist {
+  list-style: none;
+}
 
 
 /*Навигация*/
+.navigation {
+  display: flex;
+  width: 1060px;
+  height: 70px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -74,7 +98,30 @@ body {
   color: #000;
 }
 
-/*Список ссылок юзер навигации*/
+.logo-link {
+  display: block
+  width: 139px;
+  height: 70px;
+}
+
+.navigation-list {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000;
+  width: 345px;
+  height: 66px;
+}
+
+.navigation-list-user {
+  margin: 0;
+  width: 264;
+  height: 66px;
+  margin-left: auto;
+}
+
 .navigetion-list-user a {
   text-decoration: none;
   color: #000;
@@ -106,29 +153,64 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  color: #333;
 }
-
-/*Поясняющий текст после вступительных заголовков*/
+/*Поясняющий текст к заголовкам*/
 .section-description {
   font-weight: 400;
   font-size: 22px;
-  line-height: 26px;
   line-height: 36px;
   text-align: center;
   color: #333;
 }
 
-/*Бок преимуществ*/
-.edge-list {
-  list-style: none;
+
+/*Главный экран*/
+
+.screen {
+  background-color: #fff;
+  width: 1200px;
+  height: 767px;
+  margin: 0;
 }
 
-.edge-list .edge-sublist {
-  list-style: none;
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("../images/mainPage/mainScrin/indexBackground.jpg");
+  width: 1200px;
+  height: 485px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+
+}
+
+.vector {
+  display: block;
+  width: 1200px;
+  height: 57px;
+}
+
+.title-screen {
+  width: 720px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.description-screen {
+  width: 720px;
+  height: 37px;
+  margin: 0 auto;
 }
 
 
-/*Заголовки*/
+
+/*Блок преимуществ*/
+/* заголовки */
 .edge-title {
   font-weight: 700;
   font-size: 24px;
@@ -137,79 +219,25 @@ body {
   text-align: center;
 }
 
-/*Поясняющий текст*/
-.edge-description {
-  font-size: 22px;
-  line-height: 36px;
-  font-weight: 400;
-  text-align: center;
-  color: #333;
-}
-
-/*Нумерация преимуществ*/
-/*Нумерация преимуществ*3*4*5*/
-.edge-number {
+/*эелементы списка*/
+.edge-item {
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
   text-align: center;
-  color: #333;
-}
-
-/*Описание преимуществ*/
-.edge-description {
-  font-size: 18px;
-  line-height: 21px;
-  color: #333;
-}
-
-/*Блок №1 с картинкой*/
-.edge-wrapper-number1 {
   background-color: #83B3D3;
-  color: #fff;
+  color: #333;
 }
-/*Белый текс*/
-.edge-number-white{
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #fff;
-}
-.edge-description-white{
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #fff;
-}
-/*Блок №2 с картинкой*/
-.edge-wrapper-number2 {
-  background-color: #83B3D3;
+
+.edge-item-long {
   color: #fff;
 }
 
-/*Блоки без нумерации с иконками*/
-.edge-wrapper-icon-hous {
-  background: rgba(131, 179, 211, 0.12)
-}
-.edge-wrapper-icon-suvenir {
-  background: rgba(131, 179, 211, 0.12)
-}
 
-/*Блоки преимуществ №3/4/5*/
-.edge-wrapper-number3 {
-  background: rgba(131, 179, 211, 0.12)
-}
-.edge-wrapper-number4{
-  background: rgba(131, 179, 211, 0.2);
-}
-.edge-wrapper-number5 {
-  background: rgba(131, 179, 211, 0.12)
-}
 
 /*Кнопка поиска гостиниц*/
 .search-button-hotell {
+  margin: 0 auto;
   text-align: center;
-  background-color: #756257;
   width: 580px;
   height: 60px;
   background: #756257;
@@ -222,17 +250,28 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  text-align: center;
 }
 
 /*Форма подписки*/
-.mailing-list-index {
+.mailing-index {
   background: url("../images/mainPage/malling/backgroundMalig.jpg");
   background-size: 100% auto;
   width: 400;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
   color: #fff;
+}
+
+.mailling-title {
+  color: #fff;
+}
+.mailling-description {
+  color: #fff;
+}
+
+.mailing-index-form {
+  text-align: center;
 }
 
 /*Описание текст*/
