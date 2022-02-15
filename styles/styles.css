@@ -85,7 +85,6 @@ body {
 .navigation {
   display: flex;
   width: 1060px;
-  height: 70px;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -101,7 +100,6 @@ body {
 .logo-link {
   display: block
   width: 139px;
-  height: 70px;
 }
 
 .navigation-list {
@@ -112,13 +110,11 @@ body {
   text-decoration: none;
   color: #000;
   width: 345px;
-  height: 66px;
 }
 
 .navigation-list-user {
   margin: 0;
   width: 264;
-  height: 66px;
   margin-left: auto;
 }
 
@@ -186,37 +182,40 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
-
+  padding-bottom: 25px;
 }
 
 .vector {
   display: block;
   width: 1200px;
-  height: 57px;
 }
 
 .title-screen {
   width: 720px;
-  height: 80px;
   margin: 0 auto;
+  padding-top: 63px;
 }
 
 .description-screen {
   width: 720px;
-  height: 37px;
   margin: 0 auto;
+  padding-top: 23px;
 }
 
 
 
 /*Блок преимуществ*/
 /* заголовки */
+.edge-item-long-1 {
+
+
+}
+
 .edge-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 /*эелементы списка*/
@@ -228,8 +227,19 @@ body {
   color: #333;
 }
 
+.edge-number {
+  margin: 0;
+  padding-top: 25px;
+}
+
 .edge-item-long {
   color: #fff;
+}
+
+.edge-description-text {
+  margin: 0 auto;
+  padding-top: 26px;
+  width: 250px;
 }
 
 
