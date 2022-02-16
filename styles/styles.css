@@ -80,6 +80,10 @@ body {
   list-style: none;
 }
 
+.visual-hidden {
+  visibility: hidden;
+}
+
 
 /*Навигация*/
 .navigation {
@@ -174,7 +178,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("../images/mainPage/mainScrin/indexBackground.jpg");
+  background-image: url("../images/main-page/screen/screen-background.jpg");
   width: 1200px;
   height: 485px;
 }
@@ -245,7 +249,7 @@ body {
 
 
 /*Кнопка поиска гостиниц*/
-.search-button-hotell {
+.search-button-hotel {
   margin: 0 auto;
   text-align: center;
   width: 580px;
@@ -343,7 +347,7 @@ body {
 
 /*Каталог*/
 .catalog-products {
-  background-image: url("../images/catalog/catalogBackground.jpg");
+  background-image: url("../images/catalog/catalog-screen-background.jpg");
   background-size: 100% auto;
   background-color: #83B3D3;
   color: #fff;
