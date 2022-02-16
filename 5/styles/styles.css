@@ -1,3 +1,4 @@
+@@ -1,508 +1,547 @@
 @font-face {
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-family: "PT Sans";
@@ -14,14 +15,10 @@
   font-display: swap;
 }
 html {
-  height: 100%;
+
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -31,62 +28,67 @@ body {
   background-color: #fff;
 }
 
-.main-container {
-  flex-grow: 1;
+.page-container {
+  margin: 0 auto;
   width: 1200px;
 }
-/*спиоск главной навигации*/
+
+.main-container {
+  margin: 0 auto;
+  width: 1200px;
+
+}
+
+/*Сброс стилей списков*/
 .navigation-list {
   list-style: none;
 }
-
 /*Список юзер навигации*/
 .navigetion-list-user {
   list-style: none;
 }
-
 /*Список иконок в футоре*/
 .icon-list {
   list-style: none;
 }
-
 /*Список крошек в каталоге*/
 .breadcrumbs-list {
   list-style: none;
 }
-
 .breadcrumbs-list a {
   text-decoration: none;
 }
-
 /*Сприсок отображения карточек
 в каталоге*/
 .display-list {
   list-style: none;
 }
-
 .display-list a {
   text-decoration: none;
 }
-
 /*Список карточе в каталоге*/
 .card-list {
   list-style: none;
 }
-
 .pagination {
   list-style: none;
 }
-
-/*Главный экран*/
-.main-scrin {
-  background-image: url("../images/mainPage/mainScrin/indexBackground.jpg");
-  background-size: 100% auto;
-  background-color: #83B3D3;
+.edge-list {
+  list-style: none;
+}
+.edge-list .edge-sublist {
+  list-style: none;
 }
 
 
 /*Навигация*/
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -95,7 +97,27 @@ body {
   color: #000;
 }
 
-/*Список ссылок юзер навигации*/
+.logo-link {
+  display: block
+  width: 139px;
+}
+
+.navigation-list {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000;
+  width: 345px;
+}
+
+.navigation-list-user {
+  margin: 0;
+  width: 264;
+  margin-left: auto;
+}
+
 .navigetion-list-user a {
   text-decoration: none;
   color: #000;
@@ -105,6 +127,7 @@ body {
 .button-action-user-navigation {
   text-decoration: none;
   text-align: center;
+  background-color: #756257;
   width: 160px;
   height: 37px;
   background: #756257;
@@ -126,9 +149,9 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  color: #333;
 }
-
-/*Поясняющий текст после вступительных заголовков*/
+/*Поясняющий текст к заголовкам*/
 .section-description {
   font-weight: 400;
   font-size: 22px;
@@ -137,95 +160,93 @@ body {
   color: #333;
 }
 
-/*Бок преимуществ*/
-.edge-list {
-  list-style: none;
+
+/*Главный экран*/
+
+.screen {
+  background-color: #fff;
+  width: 1200px;
+  height: 767px;
+  margin: 0;
 }
 
-.edge-list .edge-sublist {
-  list-style: none;
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("../images/mainPage/mainScrin/indexBackground.jpg");
+  width: 1200px;
+  height: 485px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.vector {
+  display: block;
+  width: 1200px;
+}
+
+.title-screen {
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 63px;
+}
+
+.description-screen {
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 23px;
 }
 
 
-/*Заголовки*/
+
+/*Блок преимуществ*/
+/* заголовки */
+.edge-item-long-1 {
+
+
+}
+
 .edge-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  text-align: center;
 }
 
-/*Поясняющий текст*/
-.edge-description {
-  font-size: 22px;
-  line-height: 36px;
-  font-weight: 400;
+/*эелементы списка*/
+.edge-item {
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
+  background-color: #83B3D3;
   color: #333;
 }
 
-/*Нумерация преимуществ*3*4*5*/
 .edge-number {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  text-align: center;
-  color: #333;
+  margin: 0;
+  padding-top: 25px;
 }
 
-/*Описание преимуществ*/
-.edge-description {
-  font-size: 18px;
-  line-height: 21px;
-  color: #333;
-}
-
-/*Блок №1 с картинкой*/
-.edge-wrapper-number1 {
-  background-color: #83B3D3;
-  color: #fff;
-}
-/*Белый текс*/
-.edge-number-white{
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #fff;
-}
-.edge-description-white{
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #fff;
-}
-/*Блок №2 с картинкой*/
-.edge-wrapper-number2 {
-  background-color: #83B3D3;
+.edge-item-long {
   color: #fff;
 }
 
-/*Блоки без нумерации с иконками*/
-.edge-wrapper-icon-hous {
-  background: rgba(131, 179, 211, 0.12)
-}
-.edge-wrapper-icon-suvenir {
-  background: rgba(131, 179, 211, 0.12)
+.edge-description-text {
+  margin: 0 auto;
+  padding-top: 26px;
+  width: 250px;
 }
 
-/*Блоки преимуществ №3/4/5*/
-.edge-wrapper-number3 {
-  background: rgba(131, 179, 211, 0.12)
-}
-.edge-wrapper-number4{
-  background: rgba(131, 179, 211, 0.2);
-}
-.edge-wrapper-number5 {
-  background: rgba(131, 179, 211, 0.12)
-}
+
 
 /*Кнопка поиска гостиниц*/
 .search-button-hotell {
+  margin: 0 auto;
   text-align: center;
   width: 580px;
   height: 60px;
@@ -239,23 +260,35 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  text-align: center;
 }
 
 /*Форма подписки*/
-.mailing-list-index {
+.mailing-index {
   background: url("../images/mainPage/malling/backgroundMalig.jpg");
   background-size: 100% auto;
   width: 400;
   font-size: 18px;
   line-height: 26px;
-  text-align: center;
   color: #fff;
+}
+
+.mailling-title {
+  color: #fff;
+}
+.mailling-description {
+  color: #fff;
+}
+
+.mailing-index-form {
+  text-align: center;
 }
 
 /*Описание текст*/
 .mailing-description-index {
   font-size: 22px;
   line-height: 26px;
+  color: #333;
   color:#fff;
 }
 
@@ -268,6 +301,7 @@ body {
   width: 200px;
   height: 60px;
   text-transform: uppercase;
+  background-color: #83B3D3;
   border: none;
   color: #fff;
   background: #83B3D3;
@@ -319,6 +353,7 @@ body {
 .catalog-products-title {
   font-weight: 700;
   font-size: 60px;
+  line-height: 60px;
   line-height: 78px;
 }
 
@@ -333,6 +368,7 @@ body {
 .catalog-list {
   font-weight: 400;
   font-size: 18px;
+  line-height: 22px;
   line-height: 23px;
 }
 
@@ -343,7 +379,9 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  text-align: center;
   color: #fff;
+  background-color: #83B3D3;
   width: 160px;
   height: 48px;
   background: #83B3D3;
@@ -364,6 +402,8 @@ body {
   font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
+  line-height: 24px;
+  border-color: #E5E5E5;
   line-height: 23px;
   border: 2px solid #E6E6E6;
   width: 287px;
@@ -376,6 +416,7 @@ body {
 .card-title {
   font-weight: 700;
   font-size: 24px;
+  line-height: 32px;
   line-height: 31px;
 }
 
@@ -383,6 +424,7 @@ body {
 .product-title-price {
   font-weight: 400;
   font-size: 18px;
+  line-height: 24px;
   line-height: 23px;
   color: #333;
 }
@@ -391,11 +433,13 @@ body {
 .card-button-more {
   font-weight: 700;
   font-size: 16px;
+  line-height: 20px;
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   color: #fff;
+  background-color: #756257;
   background: #756257;
   width: 133px;
   height: 37px;
@@ -406,11 +450,13 @@ body {
 .card-button-favorit {
   font-weight: 700;
   font-size: 16px;
+  line-height: 20px;
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   color: #fff;
+  background-color:#83B3D3;
   background:#83B3D3;
   width: 133px;
   height: 37px;
@@ -448,6 +494,7 @@ body {
   height: 60px;
   border: none;
   color: #fff;
+  background-color: #83B3D3;
   background: #83B3D3;
   border-radius: 4px;
 }
@@ -480,6 +527,7 @@ body {
   width: 200px;
   height: 60px;
   text-transform: uppercase;
+  background-color: #83B3D3;
   background: #83B3D3;
   border: none;
   color: #fff;
@@ -499,6 +547,7 @@ body {
 .background-link {
   width: 55px;
   height: 55px;
+  background-color: #83B3D3;
   margin-bottom: 10px;
   background: #83B3D3;
   border-radius: 4px;
@@ -527,6 +576,7 @@ body {
   width: 55px;
   height: 55px;
   margin-bottom: 10px;
+  background-color: #E5E5E5;
   background: #E5E5E5;
   border-radius: 4px;
 }
@@ -539,6 +589,8 @@ body {
 .select-control-pages {
   font-family: "PT Sans";
   font-size: 18px;
+  line-height: 24px;
+  color: #333;
   line-height: 23px;
   width: 160px;
   height: 48px;
