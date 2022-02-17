@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -33,11 +34,7 @@ body {
   width: 1200px;
 }
 
-.main-container {
-  margin: 0 auto;
-  width: 1200px;
 
-}
 
 /*Сброс стилей списков*/
 .navigation-list {
@@ -78,6 +75,10 @@ body {
 }
 .edge-list .edge-sublist {
   list-style: none;
+}
+
+.visual-hidden {
+  visibility: hidden;
 }
 
 
@@ -125,22 +126,24 @@ body {
 
 /*Кнопка в навигации "хочу сюда!"*/
 .button-action-user-navigation {
-  text-decoration: none;
-  text-align: center;
-  background-color: #756257;
-  width: 160px;
-  height: 37px;
-  background: #756257;
-  border-radius: 4px;
-}
-
-.action-link span {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background-color: #756257;
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+}
+
+.navigetion-list-user a {
+  text-decoration: none;
   color: #fff;
 }
+
+
 
 /*Вступительные заголовки секций*/
 .section-title {
@@ -174,7 +177,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-image: url("../images/mainPage/mainScrin/indexBackground.jpg");
+  background-image: url("../images/main-page/screen/screen-background.jpg");
   width: 1200px;
   height: 485px;
 }
@@ -206,10 +209,34 @@ body {
 
 /*Блок преимуществ*/
 /* заголовки */
-.edge-item-long-1 {
-
-
+.edge-container-notel {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
+
+.edge-container-canion {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+  padding: 0;
+}
+
+.edge-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 384px;
+  background-color: #83B3D3;
+  text-align: center;
+  color: #F2F2F2;
+}
+
+.edge-image {
+  display: block;
+  margin-left: auto;
+}
+
 
 .edge-title {
   font-weight: 700;
@@ -227,13 +254,57 @@ body {
   color: #333;
 }
 
+.edge-sublist {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #333;
+  list-style: none;
+}
+
+.sublist-food {
+  background-color: #fff;
+}
+
+.edge-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #333;
+  list-style: none;
+}
+
+.edge-item {
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.item-4 {
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.edge-item-sublist {
+  width: 400px;
+  height: 384px;
+}
+
+
 .edge-number {
   margin: 0;
   padding-top: 25px;
 }
 
-.edge-item-long {
-  color: #fff;
+.edge-item-sublist {
+
 }
 
 .edge-description-text {
@@ -245,7 +316,7 @@ body {
 
 
 /*Кнопка поиска гостиниц*/
-.search-button-hotell {
+.search-button-hotel {
   margin: 0 auto;
   text-align: center;
   width: 580px;
@@ -343,7 +414,7 @@ body {
 
 /*Каталог*/
 .catalog-products {
-  background-image: url("../images/catalog/catalogBackground.jpg");
+  background-image: url("../images/catalog/catalog-screen-background.jpg");
   background-size: 100% auto;
   background-color: #83B3D3;
   color: #fff;
