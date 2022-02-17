@@ -209,102 +209,18 @@ body {
 
 /*Блок преимуществ*/
 /* заголовки */
-.edge-container-notel {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.edge-container-canion {
-  display: flex;
-  flex-direction: row-reverse;
-  margin: 0;
-  padding: 0;
-}
-
-.edge-wrapper {
-  margin: 0;
-  padding: 0;
-  width: 400px;
-  height: 384px;
-  background-color: #83B3D3;
-  text-align: center;
-  color: #F2F2F2;
-}
-
-.edge-image {
-  display: block;
-  margin-left: auto;
-}
-
-
 .edge-title {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-/*эелементы списка*/
-.edge-item {
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  background-color: #83B3D3;
-  color: #333;
-}
-
-.edge-sublist {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  background-color: rgba(131, 179, 211, 0.12);
-  color: #333;
-  list-style: none;
-}
-
-.sublist-food {
-  background-color: #fff;
-}
-
-.edge-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  background-color: rgba(131, 179, 211, 0.12);
-  color: #333;
-  list-style: none;
-}
-
-.edge-item {
-  width: 400px;
-  height: 384px;
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.item-4 {
-  height: 384px;
-  background-color: rgba(131, 179, 211, 0.2);
-}
-.edge-item-sublist {
-  width: 400px;
-  height: 384px;
-}
-
-
 .edge-number {
   margin: 0;
   padding-top: 25px;
-}
-
-.edge-item-sublist {
-
 }
 
 .edge-description-text {
@@ -312,6 +228,58 @@ body {
   padding-top: 26px;
   width: 250px;
 }
+
+.edge-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.edge-item-long-hotel {
+  display: flex;
+  background-color: #83B3D3;
+  color: #fff;
+}
+
+.edge-item-long-canyon {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #83B3D3;
+  color: #fff;
+}
+
+.edge-item {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 400px;
+  height: 384px;
+  background-color:
+  rgba(131, 179, 211, 0.12);
+  color: #333;
+}
+
+.item-food {
+  background-color: #fff;
+}
+
+.item-road {
+  background-color:
+  rgba(131, 179, 211, 0.20);
+}
+
+.edge-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 384px;
+  text-align: center;
+}
+
+
+
 
 
 
