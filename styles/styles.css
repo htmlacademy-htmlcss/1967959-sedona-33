@@ -78,7 +78,7 @@ body {
 }
 
 .visual-hidden {
-  visibility: hidden;
+  display: none;
 }
 
 
@@ -147,6 +147,8 @@ body {
 
 /*Вступительные заголовки секций*/
 .section-title {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -284,12 +286,33 @@ body {
 
 
 /*Кнопка поиска гостиниц*/
-.search-button-hotel {
-  margin: 0 auto;
+.search {
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+
+.section-description {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-search {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
   text-align: center;
-  width: 580px;
+  text-transform: uppercase;
+  width: 620px;
   height: 60px;
-  background: #756257;
+  border: none;
+  color: #fff;
+  background-color: #756257;
   border-radius: 4px;
 }
 .search-button-link {
@@ -303,10 +326,12 @@ body {
 }
 
 /*Форма подписки*/
-.mailing-index {
-  background: url("../images/mainPage/malling/backgroundMalig.jpg");
+.mailing {
+  margin-top: 100px;
+  background-image: url("images/main-page/malling/background-malig.jpg");
   background-size: 100% auto;
-  width: 400;
+  background-color: #756257;
+  height: 411px;
   font-size: 18px;
   line-height: 26px;
   color: #fff;
@@ -360,6 +385,15 @@ body {
 }
 
 /*Футер*/
+.page-footer {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  height: 120px;
+  align-items: center;
+}
+
 .page-footer a {
   text-decoration: none;
   color: #000;
@@ -374,6 +408,27 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000;
+}
+
+.icon-list {
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  height: 70px;
+}
+
+.adress-tel {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.logo-image-link {
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  height: 50px;
 }
 
 
