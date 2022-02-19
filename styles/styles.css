@@ -522,6 +522,7 @@ body {
 /*Выпадающий список сортировки
 отображения*/
 .select-container {
+  margin: 53px auto;
   display: flex;
   width: 1057px;
   align-items: center;
@@ -544,6 +545,7 @@ body {
   height: 52px;
   color: #333;
   border-radius: 4px;
+  margin-left: 191px;
 }
 
 .button-select{
@@ -553,6 +555,17 @@ body {
   height: 48px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+}
+
+.container-button-select {
+  display: flex;
+  width: 160px;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.button-select {
+  display: block;
 }
 
 /*Заголовки карточек*/
