@@ -15,10 +15,13 @@
   font-display: swap;
 }
 html {
-
+  height: 100%;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -30,6 +33,7 @@ body {
 }
 
 .page-container {
+  flex-grow: 1;
   margin: 0 auto;
   width: 1200px;
 }
@@ -77,7 +81,7 @@ body {
   list-style: none;
 }
 
-.visual-hidden {
+.visually-hidden {
   visibility: hidden;
 }
 
@@ -147,6 +151,8 @@ body {
 
 /*Вступительные заголовки секций*/
 .section-title {
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -168,8 +174,6 @@ body {
 
 .screen {
   background-color: #fff;
-  width: 1200px;
-  height: 767px;
   margin: 0;
 }
 
@@ -180,6 +184,7 @@ body {
   background-image: url("../images/main-page/screen/screen-background.jpg");
   width: 1200px;
   height: 485px;
+  background-repeat: no-repeat;
 }
 
 .logo {
@@ -190,7 +195,6 @@ body {
 
 .vector {
   display: block;
-  width: 1200px;
 }
 
 .title-screen {
@@ -284,12 +288,33 @@ body {
 
 
 /*Кнопка поиска гостиниц*/
-.search-button-hotel {
-  margin: 0 auto;
+.search {
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+
+.section-description {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-search {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
   text-align: center;
-  width: 580px;
+  text-transform: uppercase;
+  width: 620px;
   height: 60px;
-  background: #756257;
+  border: none;
+  color: #fff;
+  background-color: #756257;
   border-radius: 4px;
 }
 .search-button-link {
@@ -303,10 +328,12 @@ body {
 }
 
 /*Форма подписки*/
-.mailing-index {
-  background: url("../images/mainPage/malling/backgroundMalig.jpg");
+.mailing {
+  margin-top: 100px;
+  background-image: url("../images/main-page/malling/background-malig.jpg");
   background-size: 100% auto;
-  width: 400;
+  background-color: #756257;
+  height: 411px;
   font-size: 18px;
   line-height: 26px;
   color: #fff;
@@ -320,7 +347,12 @@ body {
 }
 
 .mailing-index-form {
-  text-align: center;
+  display: flex;
+  width: 800px;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 /*Описание текст*/
@@ -333,6 +365,8 @@ body {
 
 /*Кнопка подписки*/
 .button-subscription-mailing-index {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
@@ -349,17 +383,31 @@ body {
 
  /*Поле ввода*/
 .input-user-text-mailing-index {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 26px;
   background-color:#F2F2F2;
-  border-color: #F2F2F2;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
   color: #000;
-  width: 600px;
-  height: 50px;
+  width: 578px;
+  height: 60px;
+  padding-left: 22px;
 }
 
+
 /*Футер*/
+.page-footer {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  height: 120px;
+  align-items: center;
+}
+
 .page-footer a {
   text-decoration: none;
   color: #000;
@@ -376,20 +424,58 @@ body {
   color: #000;
 }
 
+.icon-list {
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  height: 70px;
+}
+
+.adress-tel {
+  width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.logo-image-link {
+  margin: 0;
+  padding: 0;
+  width: 240px;
+  height: 50px;
+}
+
 
 
 
 
 /*Каталог*/
+
 .catalog-products {
-  background-image: url("../images/catalog/catalog-screen-background.jpg");
-  background-size: 100% auto;
-  background-color: #83B3D3;
   color: #fff;
 }
 
+.inner-header {
+  display: flex;
+  background-image: url("../images/catalog/catalog-screen-background.jpg");
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 408px;
+}
+
+.breadcrumbs-list {
+  width: 150px;
+}
+.catalog-filter-group {
+  width: 150px;
+}
+
+.button-filter {
+  width: 160px;
+}
+
 /*Заголовок экрана фильтров*/
-.catalog-products-title {
+.inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
@@ -437,6 +523,18 @@ body {
 
 /*Выпадающий список сортировки
 отображения*/
+.select-container {
+  margin: 53px auto;
+  display: flex;
+  width: 1057px;
+  align-items: center;
+}
+
+.total-serch-hotel {
+  color: #333;
+  width: 340px;
+}
+
 .select-total-serch-hotel {
   font-family: "PT Sans";
   font-weight: 400;
@@ -446,9 +544,30 @@ body {
   line-height: 23px;
   border: 2px solid #E6E6E6;
   width: 287px;
-  height: 48px;
+  height: 52px;
   color: #333;
   border-radius: 4px;
+  margin-left: 191px;
+}
+
+.button-select{
+  padding: 0;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.container-button-select {
+  display: flex;
+  width: 160px;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.button-select {
+  display: block;
 }
 
 /*Заголовки карточек*/
@@ -523,6 +642,7 @@ body {
 
 /*Кнопка загрузть еще*/
 .button-load-more {
+  display: block;
   font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
@@ -536,6 +656,7 @@ body {
   background-color: #83B3D3;
   background: #83B3D3;
   border-radius: 4px;
+  margin: 30px auto;
 }
 
 /*Форма подписки в каталоге*/
@@ -582,7 +703,35 @@ body {
   height: 50px;
 }
 
+.container-button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1055px;
+  height: 120px;
+  border-top: 2px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  margin-bottom: 30px;
+
+}
+
 /*Пагтнация фон*/
+.pagination-container {
+  display: flex;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 400px;
+  gap: 7px;
+}
+
+.pagination-item {
+  width: 55px;
+  height: 55px;
+}
+
 .background-link {
   width: 55px;
   height: 55px;
@@ -619,10 +768,24 @@ body {
   background: #E5E5E5;
   border-radius: 4px;
 }
+
+.container-control {
+  display: flex;
+  width: 400px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.select-control-pages {
+  width: 160px;
+}
+
+.title-control {
+  width: 180px;
 }
 
 /*Гостиниц на странице*/
-.description-control {
+.title-control {
   color: #333;
 }
 .select-control-pages {
