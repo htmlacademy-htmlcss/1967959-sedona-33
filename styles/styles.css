@@ -30,6 +30,9 @@ body {
   line-height: 24px;
   color: #000;
   background-color: #fff;
+
+  /*outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;*/
 }
 
 .page-container {
@@ -102,6 +105,7 @@ body {
 }
 
 .navigation-link {
+  display: block;
   padding-right: 34px;
   font-weight: 700;
   font-size: 20px;
@@ -118,9 +122,10 @@ body {
 }
 
 .navigation-list {
+  width: 353px;
   display: flex;
   align-items: center;
-  min-width: 460px;
+  min-width: 264px;
   margin: 0;
   font-weight: 700;
   font-size: 20px;
@@ -134,13 +139,13 @@ body {
   align-items: center;
   margin: 0;
   margin-left: auto;
+  max-width: 264px;
 }
 
-item-link {
-  list-style: none;
-  display: block;
-  align-items: center;
-}
+
+
+
+
 
 /*Кнопка в навигации "хочу сюда!"*/
 .button-action-user-navigation {
@@ -154,21 +159,47 @@ item-link {
   width: 160px;
   height: 37px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.navigetion-list-user a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.navigation-item {
+action-link {
   display: block;
-  align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
 
+
+.navigation-item-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 42px;
+  height: 66px;
+  cursor: pointer;
+}
+
+.navigation-link-user {
+  display: block;
+}
+
+.navigation-button {
+  width: 160px;
+  height: 38px;
+  background: #756257;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.button-link {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+}
 
 /*Вступительные заголовки секций*/
 .section-title {
@@ -239,21 +270,29 @@ item-link {
   margin: 0;
   padding: 0;
   padding-top: 98px;
+  padding-bottom: 25px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
+
 .edge-number {
+  line-height: 21px;
   margin: 0;
-  padding-top: 25px;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+.number-long {
+  line-height: 21px;
+  padding-bottom: 25px;
 }
 
 .edge-description-text {
   margin: 0 auto;
-  padding-top: 26px;
-  width: 250px;
+  max-width: 250px;
 }
 
 .edge-list {
@@ -298,8 +337,6 @@ item-link {
 }
 
 .edge-wrapper {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   width: 400px;
@@ -307,24 +344,26 @@ item-link {
   text-align: center;
 }
 
+.edge-icon {
+  margin-top: 93px;
+  margin-bottom: 23px;
+
+
+}
+
 .title-long{
   margin: 0;
   padding: 0;
   margin-top: 93px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
-.edge-item {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
 
 .title-sublist {
   margin: 0;
   padding: 0;
-  padding-top: 184px;
+  margin-bottom: 20px;
 }
 
 
@@ -365,6 +404,7 @@ item-link {
   color: #fff;
   background-color: #756257;
   border-radius: 4px;
+  cursor: pointer;
 }
 .search-button-link {
   font-weight: 700;
@@ -431,6 +471,7 @@ item-link {
   color: #fff;
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
+  cursor: pointer;
 }
 
  /*Поле ввода*/
@@ -456,6 +497,7 @@ item-link {
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
+  align-items: center;
   height: 120px;
   align-items: center;
 }
@@ -467,6 +509,7 @@ item-link {
 
 /*Контактный телефон*/
 .adress-link {
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -477,10 +520,26 @@ item-link {
 }
 
 .icon-list {
+  display: flex;
   margin: 0;
   padding: 0;
   width: 240px;
-  height: 70px;
+  height: 40px;
+}
+
+.icon-link-footer {
+  display: block;
+}
+
+.icon-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 3px;
+  /*border: 3px solid #83B3D3;
+  border-radius: 10px;*/
 }
 
 .adress-tel {
@@ -896,6 +955,7 @@ item-link {
   display: flex;
   width: 400px;
   gap: 7px;
+  list-style: none;
 }
 
 .pagination-item {
