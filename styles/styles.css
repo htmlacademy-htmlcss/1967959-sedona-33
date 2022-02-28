@@ -527,6 +527,13 @@ action-link {
   height: 40px;
 }
 
+.container-footer {
+  display: flex;
+  width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .icon-link-footer {
   display: block;
 }
@@ -564,16 +571,24 @@ action-link {
 
 .catalog-products {
   color: #fff;
+  background-image: url("../images/catalog/catalog-screen-background.jpg");
+  background-repeat: no-repeat;
+  height: 480;
+
 }
 
 .inner-header {
   display: flex;
   flex-direction: column;
-  background-image: url("../images/catalog/catalog-screen-background.jpg");
   background-repeat: no-repeat;
   color: #fff;
+  width: 1060px;
   height: 408px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
 
 .inner-header-title {
   margin: 0;
