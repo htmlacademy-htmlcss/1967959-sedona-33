@@ -66,9 +66,17 @@
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-icon-link" href="index.html">
-                  <img src="#" alt="Главная">
+                  <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3 4 8.8V15h12V8.8L10 3Zm5 11H5V9.2l5-4.8 5 4.8V14Z"
+                    fill="#fff"/><path d="M8 13h1v-2.5h2V13h1V9.5H8V13Z" fill="#fff"/></svg>
                   <span class="visually-hidden">На главную</span>
                 </a>
+              </li>
+              <li class="breadcrumbs-item">
+                <svg class="breadcrumbs-arrow" width="5" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.7 3.62.97.2C.78 0 .38 0 .1.2-.2.4-.1.8.1 1l3.22 3.02L.2 7.04c-.2.2-.2.6 0 .8 0 .1.3.21.4.21.1 0 .29-.1.39-.2l3.71-3.42c.3-.2.3-.6 0-.8Z"
+                    fill="#fff" />
+                </svg>
               </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">
@@ -79,63 +87,68 @@
             <h2 class="visually-hidden" hidden>Список товаров
               с фильтрами
             </h2>
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-title">Инфроструктура</legend>
-                <ul class="catalog-list">
-                  <li class="catalog-item">
-                    <label class="description">
-                      <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                      <span>Бассейн</span>
-                    </label class="description">
-                  </li>
-                  <li class="catalog-item">
-                    <label class="description">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      <span>Парковка</span>
-                    </label>
-                  </li>
-                  <li class="catalog-item">
-                    <label class="description">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      <span>WI-FI</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-title">Тип жилья</legend>
-                <ul class="catalog-list">
-                  <li class="catalog-item">
-                    <label class="description">
-                      <input class="control-input" type="radio" name="product-group" value="hotel" checked>
-                      <span>Гостиница</span>
-                    </label>
-                  </li>
-                  <li class="catalog-item">
-                    <label class="description">
-                      <input class="control-input" type="radio" name="product-group" value="motel">
-                      <span>Мотель</span>
-                    </label>
-                  </li>
-                  <li class="catalog-item">
-                    <label class="description">
-                      <input class="control-input" type="radio" name="product-group" value="apartaments">
-                      <span>Апартаменты</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
+            <form class="catalog-filter"
+             action="https://echo.htmlacademy.ru/" method="get">
+              <div class="container-filter">
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-title">Инфроструктура</legend>
+                  <ul class="catalog-list">
+                    <li class="catalog-item">
+                      <label class="description">
+                        <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                        <span>Бассейн</span>
+                      </label class="description">
+                    </li>
+                    <li class="catalog-item">
+                      <label class="description">
+                        <input class="control-input" type="checkbox" name="parking" checked>
+                        <span>Парковка</span>
+                      </label>
+                    </li>
+                    <li class="catalog-item">
+                      <label class="description">
+                        <input class="control-input" type="checkbox" name="wi-fi">
+                        <span>WI-FI</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="catalog-filter-group">
+                  <legend class="catalog-title">Тип жилья</legend>
+                  <ul class="catalog-list">
+                    <li class="catalog-item">
+                      <label class="description">
+                        <input class="control-input" type="radio" name="product-group" value="hotel" checked>
+                        <span>Гостиница</span>
+                      </label>
+                    </li>
+                    <li class="catalog-item">
+                      <label class="description">
+                        <input class="control-input" type="radio" name="product-group" value="motel">
+                        <span>Мотель</span>
+                      </label>
+                    </li>
+                    <li class="catalog-item">
+                      <label class="description">
+                        <input class="control-input" type="radio" name="product-group" value="apartaments">
+                        <span>Апартаменты</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <div class="container-button-filter">
+                  <button type="submit" class="button-filter">
+                    Применить
+                  </button>
+                  <button type="button" class="button-filter button-reset">
+                    Сбросить
+                  </button>
+                </div>
+              </div>
             </form>
-            <button type="submit" class="button-filter">
-              Применить
-            </button>
-            <button type="button" class="button-filter button-style">
-              Сбросить
-            </button>
           </div>
 
-          <div class="catalog-right-column">
+          <div class="catalog-column">
             <!--Сортировка-->
             <div class="select-container">
               <p class="total-serch-hotel">Найдено гостиниц: 38</p>
@@ -146,10 +159,23 @@
               </select>
               <div class="container-button-select">
                 <a class="button-select" href="#">
+                  <svg class="button-select-icon icon-tile" width="16" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4 0H0v3.43h4V0ZM16 0h-4v3.43h4V0ZM10 0H6v3.43h4V0ZM4 4.57H0V8h4V4.57ZM16 4.57h-4V8h4V4.57ZM10 4.57H6V8h4V4.57Z"
+                      fill="#000" />
+                  </svg>
                 </a>
                 <a class="button-select" href="#">
+                  <svg class="button-select-icon" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
+                  </svg>
                 </a>
                 <a class="button-select" href="#">
+                  <svg class="button-select-icon" width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
+                      fill="#000" />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -174,7 +200,20 @@
                       <a class="card-button-link" href="#">В избранное</a>
                     </div>
                     <div class="rating-container">
-                      <p class="rating-stars"></p>
+                      <p class="rating-stars">
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                      </p>
                       <p class="rating-description">Рейтинг</p>
                     </div>
                   </div>
@@ -195,7 +234,17 @@
                       <a class="card-button-link" href="#">В избранное</a>
                     </div>
                     <div class="rating-container">
-                      <p class="rating-stars"></p>
+                      <p class="rating-stars">
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                      </p>
                       <p class="rating-description">Рейтинг</p>
                     </div>
                   </div>
@@ -216,7 +265,14 @@
                       <a class="card-button-link" href="#">В избранное</a>
                     </div>
                     <div class="rating-container">
-                      <p class="rating-stars"></p>
+                      <p class="rating-stars">
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                      </p>
                       <p class="rating-description">Рейтинг</p>
                     </div>
                   </div>
@@ -237,7 +293,14 @@
                       <a class="card-button-link" href="#">В избранное</a>
                     </div>
                     <div class="rating-container">
-                      <p class="rating-stars"></p>
+                      <p class="rating-stars">
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                        <svg width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3" />
+                        </svg>
+                      </p>
                       <p class="rating-description">Рейтинг</p>
                     </div>
                   </div>
@@ -265,27 +328,27 @@
                 </li>
                 <li class="pagination-item">
                   <div class="background-link">
-                    <a class="pagination-link" href="#">2</a>
+                    <a class="pagination-link-block" href="#">2</a>
                   </div>
                 </li>
                 <li class="pagination-item">
                   <div class="background-link">
-                    <a class="pagination-link" href="#">3</a>
+                    <a class="pagination-link-block" href="#">3</a>
                   </div>
                 </li>
                 <li class="pagination-item">
                   <div class="background-link">
-                    <a class="pagination-link" href="#">4</a>
+                    <a class="pagination-link-block" href="#">4</a>
                   </div>
                 </li>
                 <li class="pagination-item">
                   <div class="background-link">
-                    <a class="pagination-link" href="#">...</a>
+                    <a class="pagination-link-block" href="#">...</a>
                   </div>
                 </li>
                 <li class="pagination-item">
                   <div class="background-link">
-                    <a class="pagination-link" href="#">10</a>
+                    <a class="pagination-link-block" href="#">10</a>
                   </div>
                 </li>
                 <li class="pagination-item">
@@ -306,22 +369,40 @@
               </div>
             </div>
 
-            <!--Форма подписки-->
+
+            <section class="mailing-catalog">
+              <h2 class="visually-hidden">Подписка</h2>
+              <p class="section-title mailling-title-catalog">
+                Подпишитесь на рассылку
+              </p>
+              <p class="section-description mailling-description-catalog">Только полезная информация
+                и никакого спама, <br>честное бойскаутское!
+              </p>
+              <form action="https://echo.htmlacademy.ru/" class="mailing-catalog-form" method="get">
+                <label class="description">
+                  <input class="input-user-text-mailing-catalog" type="text" name="mailing-index-form-user" placeholder="Ваш e-mail"
+                    required>
+                </label>
+                <button type="submit" class="button-subscription-mailing-catalog">Подписаться</button>
+              </form>
+            </section>
+
+            <!--Форма подписки
             <div class="mailing-list-catalog">
               <h2 class="visually-hidden">Подписка</h2>
               <p class="section-title">Подпишитесь на рассылку</p>
               <p class="mailing-description-catalog">Только полезная информация
-                и никакого спама, честное бойскаутское!
+                и никакого спама,<br> честное бойскаутское!
               </p>
-              <form action="https://echo.htmlacademy.ru/" class="mailing-form-catalog" method="get">
-                <label class="description">
-                  <input class="input-user-text-mailing-index" type="text" name="mailing-index-form-user"
+              <form action="https://echo.htmlacademy.ru/" class="mailing-catalog-form" method="get">
+                <label class="description-catalog">
+                  <input class="input-user-text-mailing-catalog" type="text" name="mailing-catalog-form-user"
                     placeholder="Ваш e-mail" required>
                 </label>
-                <button type="submit" class="button-subscription-mailing-index">Подписаться</button>
+                <button type="submit" class="button-subscription-mailing-catalog">Подписаться</button>
               </form>
             </div>
-          </div>
+          </div>-->
         </section>
       </main>
 
