@@ -858,7 +858,7 @@ action-link {
 }
 
 /*Описание, цена*/
-.product-title-price {
+.product-title {
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -866,6 +866,13 @@ action-link {
   line-height: 24px;
   line-height: 23px;
   color: #333;
+  display: inline-block;
+  margin-right: 82px;
+  margin-bottom: 16px;
+}
+
+.product-prace {
+  margin-right: 0;
 }
 
 /*Кнопка подробнее*/
@@ -941,20 +948,24 @@ action-link {
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 47px;
   width: 91px;
   height: 17px;
 }
 
 .card-list {
-  display: flex;
-  flex-wrap: wrap;
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: 339px 339px 339px;
+  gap: 10px;
+  justify-content: center;
   margin: 0;
   padding: 0;
   margin-bottom: 54px;
   width: 1056px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 70px;
+
 }
 
 .product-container {
@@ -968,15 +979,18 @@ action-link {
 }
 
 .card-item {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
   margin: 0;
   padding: 0;
-  margin-right: 10px;
-  width: 340px;
+  width: 339px;
 }
 
 .card-wrapper {
   margin: 0;
   padding: 20px;
+  width: 299px;
 }
 
 .card-link {
@@ -985,21 +999,17 @@ action-link {
   margin-bottom: 16px;
 }
 
-.product-title-price {
-  display: inline-block;
-  margin-right: 25px;
-  margin-bottom: 16px;
-}
 
 .card-button-more {
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 28px;
   margin-bottom: 16px;
 }
 
 .card-button-favorit {
   display: inline-block;
   margin-bottom: 16px;
+
 }
 
 
