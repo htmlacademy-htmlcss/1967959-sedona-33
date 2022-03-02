@@ -612,7 +612,7 @@ action-link {
   line-height: 78px;
   margin: 0;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 18px;
   padding-bottom: 8px;
 }
 
@@ -681,6 +681,8 @@ action-link {
 .control-input {
   width: 20px;
   height: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-item {
@@ -840,6 +842,8 @@ action-link {
   display: block;
 }
 
+
+
 /*Заголовки карточек*/
 .card-title {
   margin: 0;
@@ -886,11 +890,13 @@ action-link {
   text-decoration: none;
   text-align: center;
   color: #fff;
-  background-color: #756257;
   background: #756257;
   width: 133px;
   height: 37px;
   border-radius: 4px;
+  display: inline-block;
+  margin-right: 21px;
+  margin-bottom: 16px;
 }
 
 .card-button-link {
@@ -912,11 +918,12 @@ action-link {
   text-decoration: none;
   text-align: center;
   color: #fff;
-  background-color:#83B3D3;
   background:#83B3D3;
-  width: 133px;
+  width: 140px;
   height: 37px;
   border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 
@@ -948,7 +955,7 @@ action-link {
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-right: 47px;
+  margin-right: 48px;
   width: 91px;
   height: 17px;
 }
@@ -1000,20 +1007,8 @@ action-link {
 }
 
 
-.card-button-more {
-  display: inline-block;
-  margin-right: 28px;
-  margin-bottom: 16px;
-}
 
-.card-button-favorit {
-  display: inline-block;
-  margin-bottom: 16px;
-
-}
-
-
-/*Кнопка загрузть еще*/
+/*Загрузть еще*/
 .container-button {
   margin-left: auto;
   margin-right: auto;
@@ -1036,7 +1031,6 @@ action-link {
   height: 60px;
   border: none;
   color: #fff;
-  background-color: #83B3D3;
   background: #83B3D3;
   border-radius: 4px;
   margin: 30px auto;
