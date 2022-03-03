@@ -605,17 +605,15 @@ action-link {
   margin-bottom: 44px;
 }
 
-
-
 .inner-header-title {
   font-size: 60px;
-  line-height: 78px;
+  line-height: 68px;
+  font-weight: 700;
   margin: 0;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 22px;
   padding-bottom: 8px;
 }
-
 
 .breadcrumbs-list {
   display: flex;
@@ -650,11 +648,6 @@ action-link {
   line-height: 21px;
 }
 
-.catalog-title {
-  padding-bottom: 30px;
-}
-
-
 .container-filter {
   display: flex;
   margin: 0;
@@ -678,17 +671,35 @@ action-link {
   margin-right: 67px;
 }
 
-.control-input {
-  width: 20px;
-  height: 20px;
+.catalog-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  padding-bottom: 30px;
 }
 
-.catalog-item {
-  padding-bottom: 16px;
+.catalog-list {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-list:nth-child(3n) {
   margin-bottom: 0;
+}
+
+.control-input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  padding-bottom: 16px;
 }
 
 .container-button-filter {
@@ -720,8 +731,6 @@ action-link {
   cursor: pointer;
 }
 
-
-
 .button-reset {
   font-size: 18px;
   line-height: 24px;
@@ -735,41 +744,14 @@ action-link {
 }
 
 
-/*Заголовок экрана фильтров*/
+
+
 .catalog-column {
   margin: 0;
   padding: 0;
   margin-bottom: 140px;
 }
 
-.inner-header-title {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 60px;
-  line-height: 78px;
-}
-
-/*Заголовки фильтров*/
-.catalog-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-}
-
-/*Список фильтров*/
-.catalog-list {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-
-/*Найдено гастинец*/
 .total-serch-hotel {
   font-weight: 700;
   text-transform: uppercase;
@@ -777,8 +759,6 @@ action-link {
   line-height: 39px;
 }
 
-/*Выпадающий список сортировки
-отображения*/
 .select-container {
   margin:0 auto;
   display: flex;
@@ -810,6 +790,7 @@ action-link {
 }
 
 .button-select{
+  display: block;
   padding: 0;
   margin: 0;
   width: 48px;
@@ -836,11 +817,55 @@ action-link {
   margin-left: auto;
 }
 
-.button-select {
-  display: block;
+
+
+
+.card-list {
+  /*display: flex;
+  flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: 339px 339px 339px;
+  gap: 10px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 54px;
+  width: 1056px;
+  margin-left: 70px;
 }
 
-/*Заголовки карточек*/
+.product-container {
+  margin-bottom: 30px;
+}
+
+.card-item {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+  padding: 0;
+  width: 339px;
+}
+
+.card-wrapper {
+  margin: 0;
+  padding: 20px;
+  width: 299px;
+}
+
+.card-link {
+  display: block;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.card-image {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
 .card-title {
   margin: 0;
   padding: 0;
@@ -852,13 +877,7 @@ action-link {
   margin-bottom: 16px;
 }
 
-.card-image {
-  width: 100%;
-  height: auto;
-}
-
-/*Описание, цена*/
-.product-title-price {
+.product-title {
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -866,6 +885,13 @@ action-link {
   line-height: 24px;
   line-height: 23px;
   color: #333;
+  display: inline-block;
+  margin-right: 82px;
+  margin-bottom: 16px;
+}
+
+.product-prace {
+  margin-right: 0;
 }
 
 /*Кнопка подробнее*/
@@ -879,11 +905,13 @@ action-link {
   text-decoration: none;
   text-align: center;
   color: #fff;
-  background-color: #756257;
   background: #756257;
   width: 133px;
   height: 37px;
   border-radius: 4px;
+  display: inline-block;
+  margin-right: 21px;
+  margin-bottom: 16px;
 }
 
 .card-button-link {
@@ -892,7 +920,6 @@ action-link {
   text-decoration: none;
   color: #fff;
 }
-
 
 /*Кнопка в избранное*/
 .card-button-favorit {
@@ -905,14 +932,13 @@ action-link {
   text-decoration: none;
   text-align: center;
   color: #fff;
-  background-color:#83B3D3;
   background:#83B3D3;
-  width: 133px;
+  width: 140px;
   height: 37px;
   border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
-
-
 
 /*рейтинг*/
 .rating-description {
@@ -941,69 +967,15 @@ action-link {
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-right: 45px;
+  margin-right: 48px;
   width: 91px;
   height: 17px;
 }
 
-.card-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 54px;
-  width: 1056px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.product-container {
-  margin-bottom: 30px;
-}
-.card-image {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  height: auto;
-}
-
-.card-item {
-  margin: 0;
-  padding: 0;
-  margin-right: 10px;
-  width: 340px;
-}
-
-.card-wrapper {
-  margin: 0;
-  padding: 20px;
-}
-
-.card-link {
-  display: block;
-  margin: 0;
-  margin-bottom: 16px;
-}
-
-.product-title-price {
-  display: inline-block;
-  margin-right: 25px;
-  margin-bottom: 16px;
-}
-
-.card-button-more {
-  display: inline-block;
-  margin-right: 25px;
-  margin-bottom: 16px;
-}
-
-.card-button-favorit {
-  display: inline-block;
-  margin-bottom: 16px;
-}
 
 
-/*Кнопка загрузть еще*/
+
+/*Загрузть еще*/
 .container-button {
   margin-left: auto;
   margin-right: auto;
@@ -1026,7 +998,6 @@ action-link {
   height: 60px;
   border: none;
   color: #fff;
-  background-color: #83B3D3;
   background: #83B3D3;
   border-radius: 4px;
   margin: 30px auto;
@@ -1075,7 +1046,6 @@ action-link {
 }
 
 /*Пагинация цифры*/
-
 .pagination-link-block {
   display: block;
   margin: 0;
@@ -1148,6 +1118,8 @@ action-link {
 }
 
 
+
+
 /*Форма подписки какталог*/
 .mailing-catalog {
   margin: 0;
@@ -1161,7 +1133,6 @@ action-link {
   color: #333;
   margin-bottom: 140px;
 }
-
 
 .mailing-catalog-form {
   display: flex;
