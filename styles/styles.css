@@ -99,28 +99,18 @@ body {
 
 
 /*Навигация*/
-.navigation {
-  display: flex;
-  width: 1060px;
-  margin: 0 auto;
-  background-color: #fff;
-}
-
-.navigation-link {
-  display: block;
-  padding-right: 34px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-decoration: none;
-  color: #000;
-}
-
 .logo-link {
   margin: 0;
   padding: 0;
   display: block;
   width: 139px;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 .navigation-list {
@@ -137,63 +127,69 @@ body {
   color: #000;
 }
 
+.navigation-link {
+  display: block;
+  margin-right: 34px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.navigation-link:hover {
+  color: #756257;
+}
+.navigation-item:active .navigation-link {
+  border-bottom: 2px solid #615048;
+}
+
+
 .navigation-list-user {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
   margin-left: auto;
-  max-width: 264px;
+  list-style: none;
+  box-sizing: border-box;
 }
-
-
-
-
-
-
-/*Кнопка в навигации "хочу сюда!"*/
-.button-action-user-navigation {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  background-color: #756257;
-  width: 160px;
-  height: 37px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-action-link {
-  display: block;
-}
-
-
 
 .navigation-item-user {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 42px;
   height: 66px;
-  cursor: pointer;
+}
+
+.navigation-item-user:nth-child(2) {
+  margin-right: 20px;
 }
 
 .navigation-link-user {
   display: block;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.navigation-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation-link-user:hover .navigation-icon {
+  fill: #756257;
 }
 
 .navigation-button {
-  width: 160px;
-  height: 38px;
-  background: #756257;
-  text-transform: uppercase;
-  border-radius: 4px;
+  list-style: none;
 }
 
 .button-link {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -202,8 +198,21 @@ action-link {
   text-decoration: none;
   text-align: center;
   color: #fff;
+  padding: 8px 29.5px;
+  background: #756257;
+  text-transform: uppercase;
   border-radius: 4px;
 }
+
+.button-link:hover {
+  background-color: #615048;
+}
+
+.button-link:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
 
 /*Вступительные заголовки секций*/
 .section-title {
@@ -378,9 +387,7 @@ action-link {
 
 
 
-
-
-/*Кнопка поиска гостиниц*/
+/*поиск гостиниц*/
 .search {
   margin: 0;
   padding: 0;
@@ -415,7 +422,16 @@ action-link {
   border-radius: 4px;
   cursor: pointer;
 }
-.search-button-link {
+
+.button-search:hover {
+  background-color: #615048;
+}
+
+.button-search:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+/*.search-button-link {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -423,7 +439,7 @@ action-link {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-}
+}*/
 
 /*Форма подписки*/
 .mailing {
@@ -463,7 +479,6 @@ action-link {
   height: 60px;
   margin-left: auto;
   margin-right: auto;
-  box-sizing: border-box;
 }
 
 /*Описание текст*/
@@ -491,6 +506,15 @@ action-link {
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
   cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button-subscription-mailing-index:hover {
+  background-color: #68A2CA;
+}
+
+.button-subscription-mailing-index:focus {
+  border: 3px solid #756257;
 }
 
 .input-user-text-mailing-index {
@@ -506,8 +530,16 @@ action-link {
   width: 578px;
   height: 60px;
   padding-left: 22px;
+  box-sizing: border-box;
 }
 
+.input-user-text-mailing-index:hover {
+  background-color: #E6E6E6;
+}
+
+.input-user-text-mailing-index:focus {
+  border: 3px solid #83B3D3;
+}
 
 /*Футер*/
 .page-footer {
@@ -519,21 +551,14 @@ action-link {
   align-items: center;
 }
 
-.page-footer a {
-  text-decoration: none;
-  color: #000;
-}
+
 
 /*Контактный телефон*/
-.adress-link {
-  display: block;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  color: #000;
+.container-footer {
+  display: flex;
+  width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .icon-list {
@@ -544,16 +569,6 @@ action-link {
   height: 40px;
 }
 
-.container-footer {
-  display: flex;
-  width: 1060px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.icon-link-footer {
-  display: block;
-}
 
 .icon-item {
   display: flex;
@@ -566,11 +581,48 @@ action-link {
   border-radius: 10px;*/
 }
 
+.icon-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.icon-link-footer:focus {
+  border: 3px solid #68A2CA;
+  border-radius: 10px;
+}
+
+.icon-social {
+  fill: #83B3D3;
+}
+.icon-link-footer:hover .icon-social {
+  fill: #68A2CA;
+}
+
 .adress-tel {
+  margin: 0;
+  padding: 0;
+  display: flex;
   width: 720px;
+  height: 50px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  justify-content: center;
+}
+
+.adress-link {
+  display: block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
 }
 
 .logo-image-link {
