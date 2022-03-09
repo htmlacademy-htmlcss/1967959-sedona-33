@@ -109,7 +109,7 @@ body {
 .navigation {
   display: flex;
   width: 1060px;
-  height: 66px;
+  height: 65px;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -129,7 +129,8 @@ body {
 }
 
 .navigation-link {
-  display: block;
+  position: relative;
+  display: flex;
   margin-right: 34px;
   font-weight: 700;
   font-size: 20px;
@@ -141,12 +142,25 @@ body {
   box-sizing: border-box;
 }
 
+.border-link::before {
+  content:"";
+  outline: 2px solid #615048;
+  position: absolute;
+  width: 100%;
+  display: block;
+  margin-top: 44px;
+}
+
 .navigation-link:hover {
   color: #756257;
 }
-.navigation-link:active {
-  border-bottom: 2px solid #615048;
+
+.navigation-link:focus {
+  display: none;
 }
+
+
+
 
 .navigation-list-user {
   position: relative;
