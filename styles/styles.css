@@ -145,7 +145,7 @@ body {
   color: rgba(117, 98, 87, 0.3);
 }
 
-.border-link::before {
+.activ-link::before {
   content:"";
   outline: 2px solid #615048;
   position: absolute;
