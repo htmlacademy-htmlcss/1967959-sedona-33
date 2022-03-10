@@ -30,9 +30,6 @@ body {
   line-height: 24px;
   color: #000;
   background-color: #F2F2F2;
-
-  /*outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;*/
 }
 
 .page-container {
@@ -99,28 +96,19 @@ body {
 
 
 /*Навигация*/
-.navigation {
-  display: flex;
-  width: 1060px;
-  margin: 0 auto;
-  background-color: #fff;
-}
-
-.navigation-link {
-  display: block;
-  padding-right: 34px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-decoration: none;
-  color: #000;
-}
-
 .logo-link {
   margin: 0;
   padding: 0;
   display: block;
   width: 139px;
+}
+
+.navigation {
+  display: flex;
+  width: 1060px;
+  height: 65px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 .navigation-list {
@@ -137,63 +125,85 @@ body {
   color: #000;
 }
 
+.navigation-link {
+  position: relative;
+  display: flex;
+  margin-right: 34px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+.navigation-link:hover {
+  color: #756257;
+}
+.navigation-link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.border-link::before {
+  content:"";
+  outline: 2px solid #615048;
+  position: absolute;
+  width: 100%;
+  display: block;
+  margin-top: 44px;
+}
+
 .navigation-list-user {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
   margin-left: auto;
-  max-width: 264px;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-
-
-
-
-
-/*Кнопка в навигации "хочу сюда!"*/
-.button-action-user-navigation {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  background-color: #756257;
-  width: 160px;
-  height: 37px;
-  border-radius: 4px;
-  cursor: pointer;
+.navigation-item-user:nth-child(2) {
+  margin-right: 20px;
 }
 
-action-link {
-  display: block;
-}
-
-
-
-.navigation-item-user {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 42px;
-  height: 66px;
-  cursor: pointer;
+.navigation-item-user-total-number {
+  position: absolute;
+  right: 178px;
+  bottom: 25px;
 }
 
 .navigation-link-user {
   display: block;
+  cursor: pointer;
+  padding: 22.5px 11px;
 }
 
-.navigation-button {
-  width: 160px;
-  height: 38px;
-  background: #756257;
-  text-transform: uppercase;
+.navigation-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navigation-link-user:hover .navigation-icon {
+  fill: #756257;
+}
+.navigation-link-user:active {
+  opacity: 0.3;
+}
+.navigation-link-user:focus {
+  outline: 3px solid #756257;
   border-radius: 4px;
 }
 
+.navigation-button {
+  list-style: none;
+}
+
 .button-link {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
@@ -202,10 +212,25 @@ action-link {
   text-decoration: none;
   text-align: center;
   color: #fff;
+  padding: 8px 29.5px;
+  background: #756257;
+  text-transform: uppercase;
   border-radius: 4px;
 }
+.button-link:hover {
+  background-color: #615048;
+}
+.button-link:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.button-link:active .desription-button {
+  opacity: 0.3;
+}
 
-/*Вступительные заголовки секций*/
+
+
+
 .section-title {
   margin: 0;
   padding: 0;
@@ -216,7 +241,7 @@ action-link {
   text-align: center;
   color: #333;
 }
-/*Поясняющий текст к заголовкам*/
+
 .section-description {
   font-weight: 400;
   font-size: 22px;
@@ -224,9 +249,6 @@ action-link {
   text-align: center;
   color: #333;
 }
-
-
-/*Главный экран*/
 
 .screen {
   background-color: #fff;
@@ -268,9 +290,6 @@ action-link {
 
 
 
-/*Блок преимуществ*/
-/* заголовки */
-
 .adge {
   margin-bottom: 90px;
 }
@@ -285,7 +304,6 @@ action-link {
   line-height: 28px;
   text-transform: uppercase;
 }
-
 
 .edge-number {
   line-height: 21px;
@@ -356,8 +374,6 @@ action-link {
 .edge-icon {
   margin-top: 93px;
   margin-bottom: 23px;
-
-
 }
 
 .title-long{
@@ -368,7 +384,6 @@ action-link {
   text-align: center;
 }
 
-
 .title-sublist {
   margin: 0;
   padding: 0;
@@ -378,9 +393,6 @@ action-link {
 
 
 
-
-
-/*Кнопка поиска гостиниц*/
 .search {
   margin: 0;
   padding: 0;
@@ -412,20 +424,26 @@ action-link {
   border: none;
   color: #fff;
   background-color: #756257;
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
 }
-.search-button-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
+.button-search:hover {
+  background-color: #615048;
+}
+.button-search:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+.button-search:active {
+  background-color: #615048;
+}
+.button-search:active .description-button-search {
+  opacity: 0.3;
 }
 
-/*Форма подписки*/
+
+
+
 .mailing {
   margin: 0;
   padding: 0;
@@ -435,25 +453,24 @@ action-link {
   flex-direction: column;
   margin-top: 100px;
   background-image:
-  url("../images/main-page/malling/background-malig.jpg");
+  url("../images/main-page/malling/background.jpg");
   background-color: #756257;
   width: 100%;
   font-size: 18px;
   line-height: 26px;
   color: #fff;
   margin-bottom: 40px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .mailling-title {
   margin-bottom: 15px;
   color: #fff;
 }
+
 .mailling-description {
   margin: 0 auto;
   padding: 0;
   padding-bottom: 43px;
-
   color: #fff;
 }
 
@@ -463,10 +480,8 @@ action-link {
   height: 60px;
   margin-left: auto;
   margin-right: auto;
-  box-sizing: border-box;
 }
 
-/*Описание текст*/
 .mailing-description-index {
   font-size: 22px;
   line-height: 26px;
@@ -474,7 +489,6 @@ action-link {
   color:#fff;
 }
 
-/*Кнопка подписки*/
 .button-subscription-mailing-index {
   margin: 0;
   padding: 0;
@@ -491,6 +505,19 @@ action-link {
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
   cursor: pointer;
+  box-sizing: border-box;
+}
+.button-subscription-mailing-index:hover {
+  background-color: #68A2CA;
+}
+.button-subscription-mailing-index:focus {
+  outline: 3px solid #756257;
+}
+.button-subscription-mailing-index:active {
+  background-color: #68A2CA;
+}
+.button-subscription-mailing-index:active .description-button-malling{
+  opacity: 0.3;
 }
 
 .input-user-text-mailing-index {
@@ -506,10 +533,19 @@ action-link {
   width: 578px;
   height: 60px;
   padding-left: 22px;
+  box-sizing: border-box;
+}
+.input-user-text-mailing-index:hover {
+  background-color: #E6E6E6;
+}
+.input-user-text-mailing-index:focus {
+  outline: 3px solid #83B3D3;
+  box-sizing: border-box;
 }
 
 
-/*Футер*/
+
+
 .page-footer {
   margin: 0;
   padding: 0;
@@ -519,40 +555,22 @@ action-link {
   align-items: center;
 }
 
-.page-footer a {
-  text-decoration: none;
-  color: #000;
-}
-
-/*Контактный телефон*/
-.adress-link {
-  display: block;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  color: #000;
+.container-footer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .icon-list {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 240px;
   height: 40px;
-}
-
-.container-footer {
-  display: flex;
-  width: 1060px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.icon-link-footer {
-  display: block;
+  margin-right:10px;
 }
 
 .icon-item {
@@ -560,25 +578,93 @@ action-link {
   justify-content: center;
   align-items: center;
   width: 40px;
-  height: 40px;
   margin-right: 3px;
-  /*border: 3px solid #83B3D3;
-  border-radius: 10px;*/
+}
+
+.icon-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+.icon-link-footer:focus {
+  outline: 3px solid #68A2CA;
+  border-radius: 10px;
+}
+
+.icon-social {
+  fill: #83B3D3;
+}
+.icon-link-footer:hover .icon-social {
+  fill: #68A2CA;
+}
+.icon-social:active {
+  opacity: 0.3;
 }
 
 .adress-tel {
-  width: 720px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.logo-image-link {
   margin: 0;
   padding: 0;
-  width: 240px;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  width: 720px;
+  margin-right: auto;
+  justify-content: center;
 }
+
+.adress-link {
+  display: flex;
+  margin: 0;
+  padding: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000;
+  box-sizing: border-box;
+}
+.adress-link:hover {
+  color:  #756257;
+}
+.adress-link:active {
+  opacity: 0.3;
+}
+.adress-link:focus  {
+  outline: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+.footer-logo-link {
+  margin: 0;
+  padding: 0;
+  display:flex;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo-html-academy {
+  display: block;
+}
+.footer-logo-link:hover {
+  fill: #756257;
+}
+.footer-logo-link:active {
+  opacity: 0.3;
+}
+.footer-logo-link:focus {
+  outline: 3px solid #68A2CA;
+  border-radius: 18px 22px;
+}
+
+
+
+
+
+
 
 
 
@@ -618,7 +704,7 @@ action-link {
 .breadcrumbs-list {
   display: flex;
   width: 112px;
-  height: 21px;
+  align-items: center;
   margin: 0;
   padding: 0;
   padding-bottom: 45px;
@@ -627,20 +713,36 @@ action-link {
 
 .breadcrumbs-icon-link {
   margin: 0;
-  padding: 0;
+  padding: 1px 1px;
+  margin-right: 4px;
   display: block;
   align-self: baseline;
-  margin-right: 10px;
+
 }
 
 .breadcrumbs-arrow {
+  display: block;
+  margin: 0;
+  padding: 0;
+  opacity: 0.3;
+  margin-right: 4px;
+}
+
+.breadcrumbs-icon {
   margin: 0;
   padding: 0;
   display: block;
-  align-self: baseline;
-  margin-right: 10px;
-  margin-top: 7px;
+  fill: #fff;
+}
+.breadcrumbs-icon:hover {
+  opacity: 0.6;
+}
+.breadcrumbs-icon:active {
   opacity: 0.3;
+}
+.breadcrumbs-icon-link:focus {
+  outline: 3px solid #68A2CA;
+  border-radius: 4px;
 }
 
 .breadcrumbs-link {
@@ -686,7 +788,6 @@ action-link {
   margin: 0;
   padding: 0;
 }
-
 .catalog-list:nth-child(3n) {
   margin-bottom: 0;
 }
@@ -696,6 +797,13 @@ action-link {
   height: 20px;
   margin: 0;
   padding: 0;
+}
+.control-input:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+.control-input:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .catalog-item {
@@ -711,6 +819,9 @@ action-link {
 }
 
 .button-filter {
+  display: block;
+  padding: 14px 29px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -718,31 +829,39 @@ action-link {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  width: 160px;
-  height: 48px;
   background: #83B3D3;
   border: none;
   border-radius: 4px;
-  display: block;
-  width: 160px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
   cursor: pointer;
+}
+.button-filter:hover {
+  background: #68A2CA;
+}
+.button-filter:focus {
+  outline: 3px solid #FFFFFF;
+  border-radius: 4px;
+}
+.button-filter:active .desription-button-form {
+  opacity: 0.3;
 }
 
 .button-reset {
-  font-size: 18px;
-  line-height: 24px;
+  display: block;
   margin: 0;
   padding: 0;
-  height: 23px;
+  width: 160px;
+  height: 49px;
+  font-size: 18px;
+  line-height: 24px;
   background: none;
-  border: none;
   text-transform: none;
   font-weight: 400;
+  cursor: pointer;
 }
-
+.button-reset:hover {
+  opacity: 0.6;
+  background: none;
+}
 
 
 
@@ -788,6 +907,19 @@ action-link {
   margin-left: 191px;
   padding-left: 20px;
 }
+.select-total-serch-hotel:hover {
+  border: 2px solid #83B3D3;
+  border-radius: 4px;
+}
+.select-total-serch-hotel:focus {
+  outline: 2px solid #68A2CA;
+  border-radius: 4px;
+}
+.select-total-serch-hotel:active {
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  opacity: 0.6;
+}
 
 .button-select{
   display: block;
@@ -797,6 +929,18 @@ action-link {
   height: 48px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+}
+.button-select:hover {
+  border: 2px solid #83B3D3;
+  border-radius: 4px;
+}
+.button-select:focus {
+  outline: 2px solid #68A2CA;
+  border-radius: 4px;
+}
+.button-select:active {
+border: 2px solid #000000;
+border-radius: 4px;
 }
 
 .button-select-icon {
@@ -850,6 +994,17 @@ action-link {
   grid-row: 2/3;
   margin-bottom: 16px;
 }
+
+.card-link-image:hover {
+  opacity: 0.6;
+}
+.card-link-image:focus {
+  outline: 3px solid #83B3D3;
+}
+.card-link-image:active {
+  opacity: 0.3;
+}
+
 
 
 .card-title,
@@ -909,6 +1064,16 @@ action-link {
   padding: 9px 20px;
   margin-bottom: 16px;
 }
+.button-more:hover {
+  background-color: #615048;
+}
+.button-more:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.button-more:active .description-button {
+  opacity: 0.3;
+}
 
 .button-favorit {
   grid-column: 2/4;
@@ -925,6 +1090,16 @@ action-link {
   justify-self: end;
   padding: 9px 20px;
   margin-bottom: 16px;
+}
+.button-favorit:hover {
+  background: #68A2CA;
+}
+.button-favorit:focus {
+  outline: 3px solid #756257;
+  border-radius: 4px;
+}
+.button-favorit:active .description-button {
+  opacity: 0.3;
 }
 
 .rating-stars {
@@ -984,16 +1159,25 @@ action-link {
   margin: 30px auto;
   cursor: pointer;
 }
+.button-load-more:hover {
+  background: #68A2CA;
+}
+.button-load-more:focus {
+  outline: 3px solid #756257;
+  border-radius: 4px;
+}
+.button-load-more:active .description-button {
+  opacity: 0.3;
+}
 
 
 
 
-/*Пагтнация фон*/
 .pagination-container {
   display: flex;
   width: 1058px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 55px;
+  margin: 0 auto;
   margin-bottom: 90px;
 }
 
@@ -1001,68 +1185,43 @@ action-link {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-start;
   list-style: none;
-  width: 379px;
 }
 
 .pagination-item {
+  height: 55px;
   margin-right: 7px;
 }
-
 .pagination-item:nth-child(1) {
-  margin-right: 0;
+  display: none;
+}
+.pagination-item:nth-child(8) {
+  display: none;
 }
 
-
-
-.background-link {
+.pagination-link {
+  display: flex;
   margin: 0;
-  padding: 0;
   width: 55px;
   height: 55px;
-  margin-bottom: 10px;
-  background: #83B3D3;
-  border-radius: 4px;
-}
-
-/*Пагинация цифры*/
-.pagination-link-block {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 55px;
-  height: 55px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
+  background-color: #83B3D3;
   color: #fff;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
-  padding: 0;
-  text-align: center;
-  padding-top: 15px;
 }
-
-.pagination-link-black {
-  display: block;
-  font-weight: 700;
-  font-size: 20px;
-  text-decoration: none;
-  padding: 0;
-  text-decoration: none;
-  color: #000;
-  text-align: center;
-  padding-top: 15px;
+.pagination-link:hover {
+  background: #68A2CA;
 }
-.background-link-grey {
-  margin: 0;
-  padding: 0;
-  width: 55px;
-  height: 55px;
-  margin-bottom: 10px;
-  background: #E5E5E5;
+.pagination-link:focus {
+  outline: 3px solid #756257;
   border-radius: 4px;
 }
+.pagination-link:active .description-button {
+  opacity: 0.3;
+}
+
 
 .container-control {
   display: flex;
@@ -1097,6 +1256,19 @@ action-link {
   border-radius: 4px;
   padding-left: 17px;
 }
+.select-control-pages:hover {
+  border: 2px solid #83B3D3;
+  border-radius: 4px;
+}
+.select-control-pages:focus {
+  outline: 2px solid #68A2CA;
+  border-radius: 4px;
+}
+.select-control-pages:active {
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  opacity: 0.6;
+}
 
 
 
@@ -1125,14 +1297,14 @@ action-link {
 }
 
 .mailling-title-catalog {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .mailling-description-catalog {
   margin: 0 auto;
   padding: 0;
   max-width: 720px;
-  padding-bottom: 26px;
+  padding-bottom: 46px;
 }
 
 /*Описание текст*/
@@ -1162,6 +1334,19 @@ action-link {
   border-radius: 0px 10px 10px 0px;
   cursor: pointer;
 }
+.button-subscription-mailing-catalog:hover {
+  background-color: #68A2CA;
+}
+.button-subscription-mailing-catalog:focus {
+  outline: 3px solid #756257;
+  border-radius: 3px;
+}
+.button-subscription-mailing-catalog:active {
+  background-color: #68A2CA;
+}
+.button-subscription-mailing-catalog:active .description-button-malling{
+  opacity: 0.3;
+}
 
 .input-user-text-mailing-catalog {
   margin: 0;
@@ -1176,4 +1361,11 @@ action-link {
   width: 578px;
   height: 60px;
   padding-left: 22px;
+}
+.input-user-text-mailing-catalog:hover {
+  background-color: #E6E6E6;
+}
+.input-user-text-mailing-catalog:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 3px;
 }
