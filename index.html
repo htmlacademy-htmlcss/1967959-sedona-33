@@ -283,6 +283,66 @@
           </a>
         </div>
       </footer>
+
+      <div class="modal-container modal-container-clos">
+          <div class="modal modal-auth">
+            <button class="modal-clouse-button">
+              <svg class="modal-clous-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" fill="#000"/></svg>
+                <samp class="visually-hidden">Закрыть окно</samp>
+            </button>
+
+            <section class="modal-content-container">
+              <h2 class="modal-tittle">Поиск гостиницы в седоне</h2>
+
+              <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
+                <label class="control">
+                  <span class="name-input">Дата заезда:</span> <input class="control-input" type="date" name="date-in"><span class="infotext-input-in">Мы не можем отправить вас в прошлое</span>
+                </label>
+
+                <label class="control">
+                  <span class="name-input">Дата выезда:</span> <input class="control-input" type="date" name="date-out"><span class="infotext-input-out">На эти даты есть свободные номера. Пока есть.</span>
+                </label>
+
+                <div class="container-control-persons">
+
+                  <div class="wrapper-control-man">
+                    <span class="name-input-person">Взрослые:</span>
+                    <div class="wrapper-control-persons">
+                      <button class="button-minus">
+                        <svg class="icon" width="13" height="1" viewBox="0 0 13 1" height="19"
+                fill="currentCollor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+                      </button>
+                      <input class="number-persons" type="text" value="1" size="2 data-max-count="5" >
+                      <button class="button-plus">
+                        <svg class="icon" width="13" height="13" viewBox="0 0 13 13" height="19"
+                fill="currentCollor" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="wrapper-control-child tooltip-icon">
+                    <span class="name-input-person person-child">Дети:</span>
+                    <div class="wrapper-control-persons">
+                      <button class="button-minus">
+                        <svg class="icon" width="13" height="1" viewBox="0 0 13 1" height="19"
+                fill="currentCollor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+                      </button>
+                      <input class="number-persons" type="text" value="1" size="2data-max-count="5">
+                      <button class="button-plus">
+                        <svg class="icon" width="13" height="13" viewBox="0 0 13 13" height="19"
+                          fill="currentCollor" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="button-booking-form"><span class="description-button">Найти</span></button>
+              </form>
+            </section>
+          </div>
+        </section>
+      </div>
     </div>
   </body>
 </html>
