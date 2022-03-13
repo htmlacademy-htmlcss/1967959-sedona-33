@@ -843,9 +843,53 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50px;
+  border: none;
   background-color: #83B3D3;
   content: "";
   cursor: pointer;
+}
+
+
+.wrapper-container-popup {
+  position: absolute;
+  right: 100px;
+  bottom: 12px;
+  width: 256px;
+  height: 152px;
+  cursor: pointer;
+}
+.popup-container {
+  margin-top: 3px;
+  right: 106px;
+  display: flex;
+  width: 256px;
+  height: 143px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: #333;
+box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+  border-radius: 10px;
+  color: #F2F2F2;
+}
+.wrapper-container-popup::before {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 9px;
+  top: 0px;
+  right: 50%;
+  transform:rotate(222deg);
+  background-image: url(../images/svg/modal-popup-conus.svg);
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.popup-content {
+  margin: auto;
+  width: 216px;
+  height: 110px;
 }
 
 
