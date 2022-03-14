@@ -897,17 +897,9 @@ body {
   display: block;
 }
 
-.tooltip {
-  position: absolute;
-  right: 107px;
-  bottom: 10px;
-  width: 256px;
-  height: 152px;
-  cursor: pointer;
-}
+
 .tooltip-text {
   display: block;
-  padding: 15px 18px 18px 22px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -916,8 +908,22 @@ body {
   border-radius: 10px;
   border-radius: 10px;
   color: #F2F2F2;
+  position: absolute;
+  right: 109px;
+  bottom: 18px;
+  width: 256px;
+  height: 143px;
+  cursor: pointer;
   display: none;
 }
+
+.text {
+  display: block;
+  width: 216px;
+  height: 110px;
+  margin: 18px 18px 18px 22px;
+}
+
 .tooltip-text::before {
   position: absolute;
   display: block;
@@ -930,6 +936,7 @@ body {
   background-repeat: no-repeat;
   content: "";
 }
+
 
 .wrapper-control-persons {
   display: flex;
@@ -959,7 +966,6 @@ body {
   outline: 3px solid #83B3D3;
   border-radius: 3px;
 }
-
 
 .icon {
   opacity: 0.3;
@@ -1009,6 +1015,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 40px;
+  text-transform: uppercase;
   border: none;
   background: #83B3D3;
   border-radius: 10px;
