@@ -296,33 +296,51 @@
               <h2 class="modal-tittle">Поиск гостиницы в седоне</h2>
 
               <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
-                <label class="control">
-                  <span class="name-input">Дата заезда:</span> <input class="control-input" type="date" name="date-in"><span class="infotext-input-in">Мы не можем отправить вас в прошлое</span>
-                </label>
+                <div class="container-date-in-out">
 
-                <label class="control">
-                  <span class="name-input">Дата выезда:</span> <input class="control-input" type="date" name="date-out"><span class="infotext-input-out">На эти даты есть свободные номера. Пока есть.</span>
-                </label>
+                  <label class="label-control">
+                  <span class="name-input">Дата заезда:</span>
+                  </label>
+                  <input class="control-input" type="date" name="date-in">
+                  <span class="infotext-input-in">Мы не можем отправить вас в прошлое</span>
+
+
+                  <label class="label-control">
+                    <span class="name-input">Дата выезда:</span>
+                  </label>
+                  <input class="control-input" type="date" name="date-out">
+                  <span class="infotext-input-out">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
 
                 <div class="container-control-persons">
-
                   <div class="wrapper-control-man">
-                    <span class="name-input-person">Взрослые:</span>
+                    <label class="name-input-person">Взрослые:</label>
                     <div class="wrapper-control-persons">
                       <button class="button-minus">
-                        <svg class="icon" width="13" height="1" viewBox="0 0 13 1" height="19"
-                fill="currentCollor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
+                       <svg class="icon" width="13" height="1" viewBox="0 0 13 1" height="19"
+                          fill="currentCollor" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/>
+                        </svg>
                       </button>
-                      <input class="number-persons" type="text" value="1" size="2 data-max-count="5" >
+                      <input class="number-persons" type="text" value="2" size="2 data-max-count="5" >
                       <button class="button-plus">
                         <svg class="icon" width="13" height="13" viewBox="0 0 13 13" height="19"
-                fill="currentCollor" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
+                          fill="currentCollor" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
                       </button>
                     </div>
                   </div>
 
-                  <div class="wrapper-control-child tooltip-icon">
-                    <span class="name-input-person person-child">Дети:</span>
+                  <div class="wrapper-control-child">
+                    <span class="name-input-person-child">
+                      <label class="name-input-person person-child">Дети:</label>
+                      <span class="tooltip">
+                        <button class="tooltip-togle" type="button" aria-labelledby="tooltip-label">
+                        </button>
+                        <span class="tooltip-text" role="tooltip" id="tooltip-label".>
+                          Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                        </span>
+                      </span>
+                    </span>
+
                     <div class="wrapper-control-persons">
                       <button class="button-minus">
                         <svg class="icon" width="13" height="1" viewBox="0 0 13 1" height="19"
@@ -337,14 +355,6 @@
                     </div>
 
                   </div>
-                  <div class="wrapper-container-popup">
-                    <div class="popup-container">
-                      <p class="popup-content">
-                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                      </p>
-                    </div>
-                  </div>
-
 
                 </div>
                 <button class="button-booking-form"><span class="description-button">Найти</span></button>

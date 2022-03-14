@@ -767,6 +767,19 @@ body {
   padding: 0;
 }
 
+.container-date-in-out {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.label-control {
+  display: flex;
+  width: 150px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .control-input {
   margin: 0;
   padding: 0;
@@ -776,6 +789,7 @@ body {
   width: 420px;
   height: 50px;
   border: none;
+  appearance: none;
   box-sizing: border-box;
   border-radius: 4px;
   background-color: #F2F2F2;
@@ -790,10 +804,10 @@ body {
 }
 
 .name-input {
+  display: flex;
   margin: 0;
   padding: 0;
-  width: 150px;
-  display: inline-block;
+  width: 155px;
 }
 
 .infotext-input-in {
@@ -802,7 +816,7 @@ body {
   color: #FF5757;
   display: block;
   width: 420px;
-  margin-left: auto;
+  margin-left:150px;
   margin-bottom: 11px;
 }
 .infotext-input-out {
@@ -811,7 +825,7 @@ body {
   color: #333;
   display: block;
   width: 420px;
-  margin-left: auto;
+  margin-left: 150px;
   margin-bottom: 11px;
 }
 
@@ -828,15 +842,15 @@ body {
 }
 
 .wrapper-control-child {
-  position: relative;
   display: flex;
-  margin-right: 55px;
   align-items: center;
 }
 
-.tooltip-icon::before {
-  position: absolute;
-  left: 55px;
+.tooltip-togle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
   width: 25px;
   height: 25px;
   background-image: url(../images/svg/modal-info-i.svg);
@@ -847,38 +861,41 @@ body {
   background-color: #83B3D3;
   content: "";
   cursor: pointer;
+  margin-left:110px;
+  margin-bottom: 15px;
+}
+.tooltip-togle:hover {
+  background-color: #68A2CA;
 }
 
-
-.wrapper-container-popup {
+.tooltip {
   position: absolute;
-  right: 100px;
-  bottom: 12px;
+  right: 107px;
+  bottom: 50px;
   width: 256px;
   height: 152px;
   cursor: pointer;
+  z-index: 1;
 }
-.popup-container {
-  margin-top: 3px;
-  right: 106px;
-  display: flex;
-  width: 256px;
-  height: 143px;
+.tooltip-text {
+  display: block;
+  padding: 15px 18px 18px 22px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   background-color: #333;
-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
-border-radius: 10px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   border-radius: 10px;
   color: #F2F2F2;
+  display: none;
 }
-.wrapper-container-popup::before {
+.tooltip-text::before {
   position: absolute;
   display: block;
   width: 10px;
   height: 9px;
-  top: 0px;
+  top: 36px;
   right: 50%;
   transform:rotate(222deg);
   background-image: url(../images/svg/modal-popup-conus.svg);
@@ -886,10 +903,9 @@ border-radius: 10px;
   content: "";
 }
 
-.popup-content {
-  margin: auto;
-  width: 216px;
-  height: 110px;
+.tooltip-togle:hover + .tooltip-text,
+.tooltip-togle:focus + .tooltip-text {
+  display: block;
 }
 
 
@@ -898,7 +914,14 @@ border-radius: 10px;
   margin: 0;
   padding: 0;
   display: block;
-  width: 155px;
+  width: 150px;
+}
+
+.name-input-person-child {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100px;
 }
 
 .number-persons {
@@ -911,11 +934,6 @@ border-radius: 10px;
 .number-persons:focus {
   outline: 3px solid #83B3D3;
   border-radius: 3px;
-}
-
-.person-child {
-  width: 54px;
-  margin-right: 43px;
 }
 
 .wrapper-control-persons {
@@ -938,20 +956,15 @@ border-radius: 10px;
 
 
 .button-minus {
-  position: absolute;
   display: flex;
   align-items: center;
   width: 25px;
   height: 25px;
-  left:15px;
-  top:12px;
   border: none;
   background: transparent;
   cursor: pointer;
 }
-.icon {
-  opacity: 0.3;
-}
+
 .button-minus:hover .icon {
   opacity: 1;
 }
@@ -965,8 +978,6 @@ border-radius: 10px;
   align-items: center;
   width: 25px;
   height: 25px;
-  position: absolute;
-  right: 15px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -1362,6 +1373,7 @@ border-radius: 10px;
     flex-direction: column;
     justify-content: end;
     width: 160px;
+    height: 168px;
 }
 
 .button-filter {
@@ -1380,7 +1392,7 @@ border-radius: 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 .button-filter:hover {
     background: #68A2CA;
@@ -1397,14 +1409,14 @@ border-radius: 10px;
     display: block;
     margin: 0;
     padding: 0;
-    width: 160px;
-    height: 20px;
-    font-size: 18px;
+    width: 100px;
+    height: 32px;
     line-height: 22px;
     background: none;
     text-transform: none;
     font-weight: 400;
     cursor: pointer;
+    align-self: center;
 }
 .button-reset:hover {
     opacity: 0.6;
