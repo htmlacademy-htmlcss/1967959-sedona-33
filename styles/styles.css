@@ -709,7 +709,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display: none;
 }
 
 .modal {
@@ -843,11 +842,16 @@ body {
   align-items: center;
 }
 
-.name-input-person {
+.label-person {
   margin: 0;
   padding: 0;
   display: block;
   width: 150px;
+}
+
+.label-person-child {
+  display: flex;
+  margin-right: 10px
 }
 
 .wrapper-control-child {
@@ -856,16 +860,47 @@ body {
 }
 
 .name-input-person-child {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100px;
+  align-items: center;
   margin: 0;
   padding: 0;
+}
+
+
+
+
+.tooltip-togle {
   display: block;
-  width: 100px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 25px;
+  height: 25px;
+  background-image: url(../images/svg/modal-info-i.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  border: none;
+  background-color: #83B3D3;
+  content: "";
+  cursor: pointer;
+  margin-right: 11px;
+}
+.tooltip-togle:hover {
+  background-color: #68A2CA;
+}
+.tooltip-togle:hover + .tooltip-text,
+.tooltip-togle:focus + .tooltip-text {
+  display: block;
 }
 
 .tooltip {
   position: absolute;
   right: 107px;
-  bottom: 50px;
+  bottom: 10px;
   width: 256px;
   height: 152px;
   cursor: pointer;
@@ -888,38 +923,12 @@ body {
   display: block;
   width: 10px;
   height: 9px;
-  top: 36px;
+  top: -4px;
   right: 50%;
   transform:rotate(222deg);
   background-image: url(../images/svg/modal-popup-conus.svg);
   background-repeat: no-repeat;
   content: "";
-}
-.tooltip-togle:hover + .tooltip-text,
-.tooltip-togle:focus + .tooltip-text {
-  display: block;
-}
-
-.tooltip-togle {
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  width: 25px;
-  height: 25px;
-  background-image: url(../images/svg/modal-info-i.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50px;
-  border: none;
-  background-color: #83B3D3;
-  content: "";
-  cursor: pointer;
-  margin-left:110px;
-  margin-bottom: 15px;
-}
-.tooltip-togle:hover {
-  background-color: #68A2CA;
 }
 
 .wrapper-control-persons {
