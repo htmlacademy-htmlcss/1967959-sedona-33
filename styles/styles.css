@@ -124,7 +124,7 @@ body {
     padding: 0;
     display: block;
     width: 139px;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .navigation {
@@ -709,7 +709,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display:
+  display: n
 }
 
 .modal {
@@ -754,7 +754,7 @@ body {
 .modal-tittle {
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1445,8 +1445,21 @@ body {
     color: #333;
     border-radius: 4px;
     margin-left: 191px;
-    padding-left: 12px;
+    padding-left: 14px;
+    background-image: url(../images/svg/select-arow.svg);
+    background-repeat: no-repeat;
+    background-position: right 19px center;
+    appearance: none;
 }
+
+
+
+
+/*.select-arrow {
+  background-image: url(../images/svg/select-arow.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}*/
 
 .select-total-serch-hotel:hover {
     border: 2px solid #83B3D3;
@@ -1510,7 +1523,7 @@ body {
 .card-list {
     display: grid;
     grid-template-columns: repeat(3, 339px);
-    column-gap: 10px;
+    column-gap: 20px;
     margin: 0;
     padding: 0;
     width: 1056px;
@@ -1524,8 +1537,8 @@ body {
 
 .card-item {
     display: grid;
-    grid-template-columns: 20px 149.5px 149.5px 20px;
-    grid-template-rows: 20px 222px min-content min-content min-content min-content 20px;
+    grid-template-columns: 21px 149.5px 149.5px 20px;
+    grid-template-rows: 20px 222px min-content min-content min-content min-content 24px;
 }
 
 .card-link-image {
@@ -1656,7 +1669,7 @@ body {
     grid-column: 2/4;
     grid-row: 6/7;
     justify-self: start;
-    padding: 9px 32px 10px 0;
+    padding: 8px 32px 8px 0;
 }
 
 .rating-description {
@@ -1673,12 +1686,12 @@ body {
     color: #333;
     border-radius: 4px;
     justify-self: end;
-    padding: 9px 32px;
+    padding: 8px 32px;
 }
 
 
 /*Загрузть еще*/
-
+*/
 .container-button {
   margin: 0;
   padding: 0;
@@ -1704,7 +1717,7 @@ body {
     color: #fff;
     background: #83B3D3;
     border-radius: 4px;
-    margin: 25px auto;
+    margin: 58px auto;
     cursor: pointer;
 }
 
@@ -1726,7 +1739,7 @@ body {
     width: 1058px;
     height: 55px;
     margin: 0 auto;
-    margin-bottom: 90px;
+    margin-bottom: 75px;
 }
 
 .pagination-list {
@@ -1734,6 +1747,7 @@ body {
     padding: 0;
     display: flex;
     list-style: none;
+    margin-left: 5px;
 }
 
 .pagination-item {
@@ -1794,7 +1808,7 @@ body {
 
 .title-control {
     color: #333;
-    margin-right: 51px;
+    margin-right: 45px;
 }
 
 .select-control-pages {
@@ -1809,6 +1823,10 @@ body {
     border: 2px solid #E6E6E6;
     border-radius: 4px;
     padding-left: 13px;
+    background-image: url(../images/svg/select-arow.svg);
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    appearance: none;
 }
 
 .select-control-pages:hover {
@@ -1853,7 +1871,7 @@ body {
 }
 
 .mailling-title-catalog {
-    padding-bottom: 0px;
+    padding-bottom: 15px;
 }
 
 .mailling-description-catalog {
