@@ -709,7 +709,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display: none;
+  display:
 }
 
 .modal {
@@ -949,6 +949,7 @@ body {
 }
 
 .number-persons {
+  font-weight: 700;
   width: 30px;
   height: 30px;
   border: none;
