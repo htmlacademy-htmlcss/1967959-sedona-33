@@ -709,6 +709,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  display:
 }
 
 .modal {
@@ -746,7 +747,7 @@ body {
 
 .modal-content-container {
   width: 575px;
-  height: 436px;
+  height: 437px;
   margin: auto;
 }
 
@@ -759,7 +760,7 @@ body {
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .booking-form {
@@ -774,10 +775,7 @@ body {
 }
 
 .label-control {
-  display: flex;
-  width: 150px;
-  flex-wrap: wrap;
-  align-items: center;
+  width: 155px;
 }
 
 .control-input {
@@ -812,21 +810,19 @@ body {
 
 .infotext-input-in {
   font-size: 16px;
-  line-height: 40px;
   color: #FF5757;
   display: block;
   width: 420px;
-  margin-left:150px;
-  margin-bottom: 11px;
+  margin-left:155px;
+  margin-bottom: 15px;
 }
 .infotext-input-out {
   font-size: 16px;
-  line-height: 40px;
   color: #333;
   display: block;
   width: 420px;
-  margin-left: 150px;
-  margin-bottom: 11px;
+  margin-left: 155px;
+  margin-bottom: 12px;
 }
 
 .container-control-persons {
@@ -846,12 +842,12 @@ body {
   margin: 0;
   padding: 0;
   display: block;
-  width: 150px;
+  width: 155px;
 }
 
 .label-person-child {
   display: flex;
-  margin-right: 10px
+  margin-right: 15px;
 }
 
 .wrapper-control-child {
@@ -869,9 +865,6 @@ body {
   padding: 0;
 }
 
-
-
-
 .tooltip-togle {
   display: block;
   margin: 0;
@@ -887,7 +880,7 @@ body {
   background-color: #83B3D3;
   content: "";
   cursor: pointer;
-  margin-right: 11px;
+  margin-right: 4px;
 }
 .tooltip-togle:hover {
   background-color: #68A2CA;
@@ -909,8 +902,8 @@ body {
   border-radius: 10px;
   color: #F2F2F2;
   position: absolute;
-  right: 109px;
-  bottom: 18px;
+  right: 105px;
+  bottom: 25px;
   width: 256px;
   height: 143px;
   cursor: pointer;
@@ -921,7 +914,7 @@ body {
   display: block;
   width: 216px;
   height: 110px;
-  margin: 18px 18px 18px 22px;
+  margin: 20px 18px 18px 22px;
 }
 
 .tooltip-text::before {
@@ -930,7 +923,7 @@ body {
   width: 10px;
   height: 9px;
   top: -4px;
-  right: 50%;
+  right: 49%;
   transform:rotate(222deg);
   background-image: url(../images/svg/modal-popup-conus.svg);
   background-repeat: no-repeat;
@@ -943,7 +936,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 133px;
-  height: 50px;
+  height: 55px;
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
@@ -956,11 +949,13 @@ body {
 }
 
 .number-persons {
-  width: 25px;
-  height: 25px;
+  font-weight: 700;
+  width: 30px;
+  height: 30px;
   border: none;
   background: transparent;
   text-align: center;
+  margin: 0 10px;
 }
 .number-persons:focus {
   outline: 3px solid #83B3D3;
@@ -971,10 +966,13 @@ body {
   opacity: 0.3;
 }
 .button-minus {
+  margin: 0;
+  padding: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -989,9 +987,12 @@ body {
 
 .button-plus {
   display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   align-items: center;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -1059,12 +1060,11 @@ body {
 
 .inner-header-title {
     font-size: 60px;
-    line-height: 68px;
+    line-height: 78px;
     font-weight: 700;
     margin: 0;
     padding: 0;
-    padding-top: 22px;
-    padding-bottom: 8px;
+    margin-top: 30px;
 }
 
 .breadcrumbs-list {
@@ -1073,7 +1073,7 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
 }
 
 .breadcrumbs-icon-link {
@@ -1137,18 +1137,21 @@ body {
     padding: 0;
     width: 150px;
     border-style: none;
-    margin-right: 67px;
+    margin-right: 68px;
 }
 
 .catalog-filter-group:nth-child(2) {
-  margin-right: 167px;
+  margin-right: 160px;
+}
+.catalog-filter-group:nth-child(3) {
+  margin-right: 80px;
 }
 
 .catalog-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    padding-bottom: 34px;
+    padding-bottom: 35px;
 }
 
 .catalog-list {
@@ -1158,6 +1161,10 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.catalog-item:not(:last-child) {
+    padding-bottom: 10px;
 }
 
 .catalog-list:nth-child(3n) {
@@ -1247,7 +1254,7 @@ body {
   border-radius: 4px;
   width: 287px;
   height: 48px;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 }
 
 .range-wrapper-input-min-price {
@@ -1288,7 +1295,7 @@ body {
 
 
 .catalog-lable-filter {
-  padding-left: 19px;
+  padding-left: 15px;
 }
 
 .range-scale {
@@ -1323,7 +1330,7 @@ body {
   border: none;
   border-radius: 4px;
   background-color: #fff;
-  left: 210px;
+  left: 218px;
   top:-8px;
   cursor: pointer;
 }
@@ -1341,9 +1348,6 @@ body {
   box-shadow: 0px 7px 15px
 }
 
-.catalog-item:not(:last-child) {
-    padding-bottom: 16px;
-}
 
 .container-button-filter {
     display: flex;
@@ -1369,7 +1373,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 29px;
+  margin-bottom: 18px;
 }
 .button-filter:hover {
     background: #68A2CA;
@@ -1394,6 +1398,7 @@ body {
     font-weight: 400;
     cursor: pointer;
     align-self: center;
+    margin-bottom: 10px;
 }
 .button-reset:hover {
     opacity: 0.6;
@@ -1440,7 +1445,7 @@ body {
     color: #333;
     border-radius: 4px;
     margin-left: 191px;
-    padding-left: 20px;
+    padding-left: 12px;
 }
 
 .select-total-serch-hotel:hover {
@@ -1505,7 +1510,7 @@ body {
 .card-list {
     display: grid;
     grid-template-columns: repeat(3, 339px);
-    gap: 10px;
+    column-gap: 10px;
     margin: 0;
     padding: 0;
     width: 1056px;
@@ -1514,7 +1519,7 @@ body {
 }
 
 .product-container {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .card-item {
@@ -1598,7 +1603,7 @@ body {
     background: #756257;
     border-radius: 4px;
     justify-self: start;
-    padding: 9px 20px;
+    padding: 9px 23px;
     margin-bottom: 16px;
 }
 
@@ -1675,13 +1680,14 @@ body {
 /*Загрузть еще*/
 
 .container-button {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1056px;
-    height: 120px;
-    border-top: 2px solid #E5E5E5;
-    border-bottom: 2px solid #E5E5E5;
-    margin-bottom: 30px;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1056px;
+  height: 120px;
+  border-top: 2px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
 }
 
 .button-load-more {
@@ -1698,7 +1704,7 @@ body {
     color: #fff;
     background: #83B3D3;
     border-radius: 4px;
-    margin: 30px auto;
+    margin: 25px auto;
     cursor: pointer;
 }
 
@@ -1802,7 +1808,7 @@ body {
     color: #333;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
-    padding-left: 17px;
+    padding-left: 13px;
 }
 
 .select-control-pages:hover {
@@ -1834,7 +1840,7 @@ body {
     font-size: 18px;
     line-height: 26px;
     color: #333;
-    margin-bottom: 140px;
+    margin-bottom: 165px;
 }
 
 .mailing-catalog-form {
@@ -1847,14 +1853,14 @@ body {
 }
 
 .mailling-title-catalog {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 
 .mailling-description-catalog {
     margin: 0 auto;
     padding: 0;
     max-width: 720px;
-    padding-bottom: 46px;
+    margin-bottom: 42px;
 }
 
 
