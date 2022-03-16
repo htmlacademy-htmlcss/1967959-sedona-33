@@ -118,9 +118,11 @@ body {
   display: block;
   width: 139px;
   margin-right: 8px;
+  z-index: 1;
 }
 
 .navigation {
+  position: relative;
   display: flex;
   width: 1060px;
   height: 65px;
@@ -289,6 +291,7 @@ body {
 }
 
 .screen-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -297,11 +300,25 @@ body {
   height: 485px;
   background-repeat: no-repeat;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto;
-  padding-bottom: 25px;
+.screen-container-figur::before {
+  position: absolute;
+  width: 100%;
+  height: 57px;
+  background-image: url("../images/main-page/screen/screen-vector.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+.logo-sedona::after {
+  position: absolute;
+  top: 51px;
+  left: 371px;
+  width: 458px;
+  height: 352px;
+  background-image: url(../images/main-page/screen/screen-logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
 }
 
 .vector {
