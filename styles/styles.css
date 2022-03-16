@@ -153,8 +153,8 @@ body {
   line-height: 26px;
   text-decoration: none;
   color: #000;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   box-sizing: border-box;
 }
 
@@ -186,32 +186,50 @@ body {
   box-sizing: border-box;
 }
 
-.navigation-item-user:nth-child(2) {
-  margin-right: 20px;
-}
+.navigation-list-user {
 
-.navigation-item-user-total-number::before {
-  position: absolute;
-  right: 178px;
-  bottom: 25px;
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/svg/number.svg);
-  background-repeat: no-repeat;
-  top: 15px;
-  content: "";
 }
 
 .navigation-link-user {
   display: block;
-  cursor: pointer;
-  padding: 22.5px 11px;
+  padding: 19px 12px;
 }
+.navigation-link-user:not(:first-child) {
+  margin-right: 20px;
+}
+
+
+.link-user-icon::before {
+  position: absolute;
+  left: 105px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: #7db54f;
+  border-radius: 50px;
+  content: "";
+}
+.number {
+  position: absolute;
+  left: 110px;
+  top: 18px;
+  font-size: 10px;
+  line-height: 13px;
+  z-index: 1;
+}
+
+/*.navigation-link-user {
+  display: block;
+  cursor: pointer;
+  width: 42px;
+  height: 66px;
+}*/
 
 .navigation-icon {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0px;
 }
 
 .navigation-link-user:hover .navigation-icon {
