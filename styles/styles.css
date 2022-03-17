@@ -201,7 +201,7 @@ body {
 
 .link-user-icon::before {
   position: absolute;
-  left: 105px;
+  left: 107px;
   top: 15px;
   width: 20px;
   height: 20px;
@@ -211,7 +211,7 @@ body {
 }
 .number {
   position: absolute;
-  left: 110px;
+  left: 111px;
   top: 18px;
   font-size: 10px;
   line-height: 13px;
@@ -315,8 +315,9 @@ body {
   justify-content: flex-end;
   background-image: url("../images/main-page/screen/screen-background.jpg");
   width: 100%;
-  height: 485px;
+  height: 486px;
   background-repeat: no-repeat;
+  background-color: #756257;
 }
 .screen-container-figur::before {
   position: absolute;
@@ -420,6 +421,7 @@ body {
 }
 
 .edge-item {
+  position: relative;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -429,9 +431,39 @@ body {
   color: #333;
 }
 
+
+.item-home::before {
+  position: absolute;
+  right:162px;
+  top:89px;
+  width: 75px;
+  height: 72px;
+  background-image: url(../images/svg/house.svg);
+  content: "";
+}
+.item-food::before {
+  position: absolute;
+  right:163px;
+  top:91px;
+  width: 74px;
+  height: 70px;
+  background-image: url(../images/svg/food.svg);
+  content: "";
+}
+.item-suvenir::before {
+  position: absolute;
+  right:168px;
+  top:85px;
+  width: 64px;
+  height: 76px;
+  background-image: url(../images/svg/suvenir.svg);
+  content: "";
+}
+
 .item-food {
   background-color: #fff;
 }
+
 
 .item-road {
   background-color: rgba(131, 179, 211, 0.2);
@@ -461,6 +493,7 @@ body {
 .title-sublist {
   margin: 0;
   padding: 0;
+  margin-top: 184px;
   margin-bottom: 22px;
 }
 
@@ -780,12 +813,19 @@ body {
 .modal-clous-icon {
   align-items: center;
   vertical-align: middle;
+  padding: 10px;
 }
 .modal-clous-icon:active {
   opacity: 0.3;
 }
 .modal-clouse-button:hover {
   background: #e6e6e6;
+}
+.modal-clouse-button:focus {
+  outline: 3px solid #83B3D3;
+}
+.modal-clouse-button:active {
+  background: #E6E6E6;
 }
 
 .modal-content-container {
@@ -814,18 +854,35 @@ body {
 .container-date-in-out {
   display: flex;
   flex-wrap: wrap;
+  width: 575px;
   align-items: center;
 }
 
 .label-control {
   width: 155px;
 }
-
-.name-input {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  width: 155px;
+.control-input {
+  display: block;
+  width: 420px;
+  height: 50px;
+  padding: 0 19px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
+.control-input:hover {
+  background: #E6E6E6;
+  border-radius: 4px;
+}
+.control-input:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.control-input:active {
+  outline: 2px solid #000000;
+  border-radius: 4px;
 }
 
 .infotext-input-in {
@@ -842,7 +899,7 @@ body {
   display: block;
   width: 420px;
   margin-left: 155px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 .container-control-persons {
@@ -967,6 +1024,7 @@ body {
 
 .number-persons {
   font-weight: 700;
+  font-size: 18px;
   width: 30px;
   height: 30px;
   border: none;
@@ -979,7 +1037,7 @@ body {
   border-radius: 3px;
 }
 
-.icon {
+.icon-minus {
   opacity: 0.3;
 }
 .button-minus {
@@ -994,14 +1052,20 @@ body {
   background: transparent;
   cursor: pointer;
 }
-.button-minus:hover .icon {
+.button-minus:hover .icon-minus {
   opacity: 1;
 }
 .button-minus:focus {
   outline: 3px solid #83b3d3;
   border-radius: 3px;
 }
+.button-minus:active {
+  opacity: 0.3;
+}
 
+.icon-plus {
+  opacity: 0.3;
+}
 .button-plus {
   display: flex;
   justify-content: center;
@@ -1014,14 +1078,15 @@ body {
   background: transparent;
   cursor: pointer;
 }
-
-.button-plus:hover .icon {
+.button-plus:hover .icon-plus {
   opacity: 1;
 }
 .button-plus:focus {
   outline: 3px solid #83b3d3;
   border-radius: 3px;
+  opacity: 1;
 }
+
 
 .button-booking-form {
   display: block;
@@ -1053,10 +1118,15 @@ body {
 /*Каталог*/
 
 /*Главный экран*/
-.catalog-products {
+.inner-container {
+  display: flex;
   color: #fff;
   background-image: url("../images/catalog/catalog-screen-background.jpg");
+  background-color: #756257;
   background-repeat: no-repeat;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-bottom: 45px;
 }
 
 .inner-header {
@@ -1065,9 +1135,9 @@ body {
   background-repeat: no-repeat;
   color: #fff;
   width: 1060px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
-  height: 408px;
   margin-bottom: 44px;
 }
 
@@ -1534,6 +1604,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 19px center;
   appearance: none;
+  cursor: pointer;
 }
 .select-total-serch-hotel:hover {
   border: 2px solid #83b3d3;
@@ -1907,6 +1978,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
+  cursor: pointer;
 }
 .select-control-pages:hover {
   border: 2px solid #83b3d3;
