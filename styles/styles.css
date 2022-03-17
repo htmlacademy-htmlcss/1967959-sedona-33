@@ -860,8 +860,22 @@ body {
 .label-control {
   width: 155px;
 }
+
+.name-input {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+}
+
 .control-input {
   display: block;
+  font-family: 'PT Sans' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
   width: 420px;
   height: 50px;
   padding: 0 19px;
@@ -914,6 +928,10 @@ body {
 }
 
 .label-person {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
   margin: 0;
   padding: 0;
   display: block;
@@ -921,6 +939,10 @@ body {
 }
 
 .label-person-child {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
   display: flex;
   margin-right: 15px;
 }
@@ -930,15 +952,6 @@ body {
   align-items: center;
 }
 
-.name-input-person-child {
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100px;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
 
 .tooltip-togle {
   display: block;
