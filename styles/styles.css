@@ -785,7 +785,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display:non
+  display:none;
 }
 
 .modal {
@@ -952,15 +952,6 @@ body {
   align-items: center;
 }
 
-/*.name-input-person-child {
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100px;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}*/
 
 .tooltip-togle {
   display: block;
