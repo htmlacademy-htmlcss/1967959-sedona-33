@@ -317,7 +317,7 @@ body {
   width: 100%;
   height: 486px;
   background-repeat: no-repeat;
-  background-color: #756257;
+  background-color: #83b3d3;
 }
 .screen-container-figur::before {
   position: absolute;
@@ -345,7 +345,7 @@ body {
 }
 
 .title-screen {
-  width: 720px;
+  max-width: 720px;
   margin: 0 auto;
   padding-top: 63px;
   margin-bottom: 38px;
@@ -426,7 +426,8 @@ body {
   padding: 0;
   text-align: center;
   width: 400px;
-  height: 384px;
+  min-height: 384px;
+  /*height: 384px;*/
   background-color: rgba(131, 179, 211, 0.12);
   color: #333;
 }
@@ -472,8 +473,7 @@ body {
 .edge-wrapper {
   margin: 0;
   padding: 0;
-  width: 400px;
-  min-height: 384px;
+  min-width: 400px;
   text-align: center;
 }
 
@@ -507,7 +507,7 @@ body {
 .section-description {
   font-size: 22px;
   line-height: 26px;
-  min-width: 720px;
+  max-width: 720px;
   margin: 0 auto;
   margin-bottom: 55px;
 }
@@ -553,7 +553,7 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url("../images/main-page/malling/background.jpg");
-  background-color: #756257;
+  background-color: #83b3d3;
   width: 100%;
   font-size: 18px;
   line-height: 26px;
@@ -1122,7 +1122,7 @@ body {
   display: flex;
   color: #fff;
   background-image: url("../images/catalog/catalog-screen-background.jpg");
-  background-color: #756257;
+  background-color: #83b3d3;
   background-repeat: no-repeat;
   width: 100%;
   padding-bottom: 20px;
