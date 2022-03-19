@@ -439,7 +439,7 @@ body {
   top:89px;
   width: 75px;
   height: 72px;
-  background-image: url(../images/svg/house.svg);
+  background-image: url(../images/svg/index-edge-icon-house.svg);
   content: "";
 }
 .item-food::before {
@@ -448,7 +448,7 @@ body {
   top:91px;
   width: 74px;
   height: 70px;
-  background-image: url(../images/svg/food.svg);
+  background-image: url(../images/svg/index-edge-icon-food.svg);
   content: "";
 }
 .item-suvenir::before {
@@ -457,7 +457,7 @@ body {
   top:85px;
   width: 64px;
   height: 76px;
-  background-image: url(../images/svg/suvenir.svg);
+  background-image: url(../images/svg/index-edge-icon-suvenir.svg);
   content: "";
 }
 
@@ -785,7 +785,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  display:none;
+  display: none;
 }
 
 .modal {
@@ -842,7 +842,7 @@ body {
   font-size: 30px;
   line-height: 40px;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .booking-form {
@@ -857,6 +857,22 @@ body {
   align-items: center;
 }
 
+.container-date-in {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container-date-out {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
 .label-control {
   width: 155px;
 }
@@ -867,6 +883,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
+  margin-right: auto;
 }
 
 .control-input {
@@ -884,6 +901,8 @@ body {
   box-sizing: border-box;
   border: none;
   cursor: pointer;
+  margin-left: auto;
+  margin-bottom: 5px;
 }
 .control-input:hover {
   background: #E6E6E6;
@@ -912,13 +931,13 @@ body {
   display: block;
   width: 420px;
   margin-left: 155px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .container-control-persons {
   display: flex;
   width: 574px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .wrapper-control-adults {
@@ -932,7 +951,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  margin: 0;
+  margin-right: auto;
   padding: 0;
   display: block;
   width: 155px;
@@ -1047,6 +1066,11 @@ body {
 .number-persons:focus {
   outline: 3px solid #83b3d3;
   border-radius: 3px;
+}
+
+.number-persons::-webkit-outer-spin-button,
+.number-persons::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .icon-minus {
