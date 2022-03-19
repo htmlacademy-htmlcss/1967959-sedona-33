@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="shortcut icon" href="images/svg/favicon.png" type="img/png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="/images/png/favicon-32.png" sizes="32x32" type="img/png">
 </head>
 
 <body>
@@ -305,17 +306,26 @@
           <form class="booking-form" action="https://echo.htmlacademy.ru/" method="get">
 
             <div class="container-date-in-out">
-              <label class="label-control">
-                <span class="name-input">Дата заезда:</span>
-              </label>
-              <input class="control-input input-in" type="text" value="27 апреля 2020" name="date-in">
-              <span class="infotext-input-in">Мы не можем отправить вас в прошлое.</span>
-              <label class="label-control">
-                <span class="name-input">Дата выезда:</span>
-              </label>
-              <input class="control-input input-out" type="text" value="1 сентября 2021" name="date-out">
-              <span class="infotext-input-out">На эти даты есть свободные номера. Пока есть.</span>
+              <div class="container-date-in">
+                <label class="label-control">
+                  <span class="name-input">Дата заезда:</span>
+                </label>
+                <input class="control-input input-in" type="text" value="27 апреля 2020" name="date-in">
+                <span class="infotext-input-in">Мы не можем отправить вас в прошлое.</span>
+              </div>
+
+
+
+              <div class="container-date-out">
+                <label class="label-control">
+                  <span class="name-input">Дата выезда:</span>
+                </label>
+                <input class="control-input input-out" type="text" value="1 сентября 2021" name="date-out">
+                <span class="infotext-input-out">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
             </div>
+
+
 
             <div class="container-control-persons">
               <div class="wrapper-control-adults">
